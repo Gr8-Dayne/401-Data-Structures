@@ -24,10 +24,10 @@ public class ArrayShift {
             // Populate elements into new arr (before midway)
             if (i < midway)
                 modifiedArray[i] = arr[i];
-            // Insert desired element at midway
+                // Insert desired element at midway
             else if (i == midway)
                 modifiedArray[i] = num;
-            // Populate elements into new arr (after midway)
+                // Populate elements into new arr (after midway)
             else
                 modifiedArray[i] = arr[i -1];
         }
