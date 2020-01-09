@@ -10,7 +10,7 @@ Myeslf and my partner for this assignment (Mattäus) whiteboarded and solved thi
 Problem domain was to find a way to insert an integer into the middle of an array of integers.
 
 #### Approach & Efficiency
-Through research and teamwork a plan was devised via whiteboard to complete this challenge.
+Through research and teamwork, a plan was devised via whiteboard to complete this challenge.
 
 #### Solution
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/ArrayReverse/assets/Day2.jpg>Whiteboard<a/>
@@ -19,3 +19,25 @@ Through research and teamwork a plan was devised via whiteboard to complete this
 
 #### Credits
 Michelle, Mattäus and Greg from class assisted me with this project as well as geeksforgeeks.org and codescracker.com.
+
+
+
+## Challenge 3
+
+#### Summary
+Myeslf and my partner for this assignment (Greg) whiteboarded and solved this issue presented to us through collaboration and research.
+
+#### Challenge Description
+Problem domain was to find a way to locate a specific element within an array (Integer).
+
+#### Approach & Efficiency
+Through research and teamwork, a plan was devised via whiteboard to complete this challenge. Constant communication was paramount in the completion of this challenge.
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+My partner Greg from class assisted me with this project as well as (websites).
