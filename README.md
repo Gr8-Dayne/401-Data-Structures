@@ -40,4 +40,4 @@ Through research and teamwork, a plan was devised via whiteboard to complete thi
 <a href=>Code<a/>
 
 #### Credits
-My partner Greg from class assisted me with this project as well as (websites).
+My partner Greg from class assisted me with this project as well as https://www.javatpoint.com/binary-search-in-java, https://www.tutorialspoint.com/java/util/arrays_binarysearch_int.htm, https://www.geeksforgeeks.org/binary-search/.
