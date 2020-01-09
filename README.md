@@ -35,7 +35,7 @@ Through research and teamwork, a plan was devised via whiteboard to complete thi
 
 #### Solution
 
-<a href=>Whiteboard<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day3.jpg>Whiteboard<a/>
   
 <a href=>Code<a/>
 
