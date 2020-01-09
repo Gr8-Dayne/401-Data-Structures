@@ -37,7 +37,7 @@ Through research and teamwork, a plan was devised via whiteboard to complete thi
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day3.jpg>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/challenges/BinarySearch.java>Code<a/>
 
 #### Credits
 My partner Greg from class assisted me with this project as well as https://www.javatpoint.com/binary-search-in-java, https://www.tutorialspoint.com/java/util/arrays_binarysearch_int.htm, https://www.geeksforgeeks.org/binary-search/.
