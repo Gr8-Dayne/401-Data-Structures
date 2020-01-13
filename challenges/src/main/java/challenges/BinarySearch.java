@@ -3,34 +3,35 @@ package challenges;
 
 public class BinarySearch {
 
-    public static int BinarySearcher(int[] incomingArray, int targetNumber ) {
+    public static int BinarySearcher(int[] incomingArray, int targetNumber) {
 
         int firstIndex = 0;
         int lastIndex = incomingArray.length - 1;
         int midway = -1;
 
-        while( firstIndex <= lastIndex ){
+        while (firstIndex <= lastIndex) {
 
             midway = (int) Math.ceil((firstIndex + lastIndex) / 2);
 
-            if ( incomingArray[midway] < targetNumber ){
+            if (incomingArray[midway] < targetNumber) {
                 firstIndex = midway + 1;
 
-            }else if ( incomingArray[midway] == targetNumber ){
+            } else if (incomingArray[midway] == targetNumber) {
                 System.out.println("Element is found at index: " + midway);
 
                 break;
 
-            }else{
+            } else {
                 lastIndex = midway - 1;
             }
         }
-        if ( firstIndex > lastIndex ){
+        if (firstIndex > lastIndex) {
             return -1;
         }
 
         return midway;
     }
+}
 
 //    public static void main (String args[]) {
 //
@@ -81,4 +82,3 @@ public class BinarySearch {
 //        return modifiedArray;
 //    }
 
-}
