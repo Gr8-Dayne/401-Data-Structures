@@ -47,7 +47,7 @@ My partner Greg and Instructor Nicholas from class assisted me with this project
 ## Lab 05
 
 #### Summary
-Myeslf and my partner for this assignment (Greg) whiteboarded and solved this issue presented to us through collaboration and research.
+First assigment with linked lists.
 
 #### Challenge Description
 Problem domain was to create a method to instantiate a Linked List, a method to add into the Linked List, and a method to return a string including the values of the nodes in the Linked List. Also, tests needed to be created to verfiy the methods worked.
