@@ -37,22 +37,43 @@ public class LinkedListTest {
         list.insertHead(20);
         list.insertHead(10);
         list.insertHead(50);
-        assertEquals(50, list.head.valueData);
+
+        // call fuction you already wrote (dont make a new one stupid)
+        list.includedInList(10);
+
+        System.out.println(list.includedInList(11));
+
+        assertFalse("Does not have 11.",
+                list.includedInList(11));
+
+        assertTrue("Does have 10.",
+                list.includedInList(10));
+
+//    if(expected != actual){
+//        throw Exception();
+//        return message;
+//    } else {
+//        happy :)
+//    }
+
 
     }
 
 //    Can properly insert multiple nodes into the linked list
 //    Can properly return a collection of all the values that exist in the linked list
-    @Test public String toString() {
+    @Test public void toStringTest() {
 
         LinkedList list = new LinkedList();
         list.insertHead(20);
         list.insertHead(10);
         list.insertHead(50);
 
-        expectedAnswer = "{ 20 } => { 10 } => { 50 } => null";
+        String expectedAnswer = "{ 50 } => { 10 } => { 20 } => null";
 
-        return overallStatement + null;
+        assertEquals("Contains nodes 50, 10, 20",
+                expectedAnswer,
+                list.toString());
+
     }
 
 }
