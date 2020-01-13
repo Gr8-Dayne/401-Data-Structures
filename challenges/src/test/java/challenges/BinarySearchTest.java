@@ -14,6 +14,9 @@ public class BinarySearchTest {
         int actualOutput = BinarySearch.BinarySearcher(arr, key);
 
         System.out.println("actualOutput = " + actualOutput);
+    }
+
+}
         
 //        assertArrayEquals(arr, key);
 
@@ -42,6 +45,4 @@ public class BinarySearchTest {
 //
 //        // "Function" call
 //        assertArrayEquals(desiredOutputTwo, actualOutputTwo);
-    }
 
-}
