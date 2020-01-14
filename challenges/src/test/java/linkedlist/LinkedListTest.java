@@ -76,6 +76,18 @@ public class LinkedListTest {
 
     }
 
+    @Test public void addToEndTest() {
+
+    }
+
+    @Test public void instantiateBeforeTest() {
+
+    }
+
+    @Test public void instantiateAfterTest() {
+
+    }
+
 }
 
 
