@@ -1,46 +1,30 @@
 # 401-Data-Structures
 
 
-## Challenge 2
+
+## Class 6 Code Challenge - Linked List Insertions
 
 #### Summary
-Myeslf and my partner for this assignment (Mattäus) whiteboarded and solved this issue presented to us through collaboration and research.
+
+Myeslf and my partner for this assignment (Micah) whiteboarded and solved this issue presented to us through collaboration and research.
 
 #### Challenge Description
-Problem domain was to find a way to insert an integer into the middle of an array of integers.
+
+Problem domain was to find a way to insert a node into an array in three seperate methods.
 
 #### Approach & Efficiency
+
 Through research and teamwork, a plan was devised via whiteboard to complete this challenge.
 
 #### Solution
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day2.jpg>Whiteboard<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/06-whiteboard.jpg>Whiteboard<a/>
   
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/challenges/ArrayShift.java>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/linkedlist/LinkedList.java>Code<a/>
 
 #### Credits
-Michelle, Mattäus and Greg from class assisted me with this project as well as geeksforgeeks.org and codescracker.com.
 
-
-
-## Challenge 3
-
-#### Summary
-Myeslf and my partner for this assignment (Greg) whiteboarded and solved this issue presented to us through collaboration and research.
-
-#### Challenge Description
-Problem domain was to find a way to locate a specific element within an array (Integer).
-
-#### Approach & Efficiency
-Through research and teamwork, a plan was devised via whiteboard to complete this challenge. Constant communication was paramount in the completion of this challenge.
-
-#### Solution
-
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day3.jpg>Whiteboard<a/>
-  
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/challenges/BinarySearch.java>Code<a/>
-
-#### Credits
-My partner Greg and Instructor Nicholas from class assisted me with this project as well as https://www.javatpoint.com/binary-search-in-java, https://www.tutorialspoint.com/java/util/arrays_binarysearch_int.htm, https://www.geeksforgeeks.org/binary-search/.
+My partner Micah from class assisted me with this project.
 
 
 
@@ -66,26 +50,49 @@ TA James assisted me with my understanding of this Lab as well as https://www.ge
 
 
 
-## Class 6 Code Challenge - Linked List Insertions
+## Challenge 3
 
 #### Summary
-
-Myeslf and my partner for this assignment (Micah) whiteboarded and solved this issue presented to us through collaboration and research.
+Myeslf and my partner for this assignment (Greg) whiteboarded and solved this issue presented to us through collaboration and research.
 
 #### Challenge Description
-
-Problem domain was to find a way to insert a node into an array in three seperate methods.
+Problem domain was to find a way to locate a specific element within an array (Integer).
 
 #### Approach & Efficiency
-
-Through research and teamwork, a plan was devised via whiteboard to complete this challenge.
+Through research and teamwork, a plan was devised via whiteboard to complete this challenge. Constant communication was paramount in the completion of this challenge.
 
 #### Solution
 
-<a href=>Whiteboard<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day3.jpg>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/challenges/BinarySearch.java>Code<a/>
 
 #### Credits
+My partner Greg and Instructor Nicholas from class assisted me with this project as well as https://www.javatpoint.com/binary-search-in-java, https://www.tutorialspoint.com/java/util/arrays_binarysearch_int.htm, https://www.geeksforgeeks.org/binary-search/.
 
-My partner Micah from class assisted me with this project as well as (websites).
+
+
+## Challenge 2
+
+#### Summary
+Myeslf and my partner for this assignment (Mattäus) whiteboarded and solved this issue presented to us through collaboration and research.
+
+#### Challenge Description
+Problem domain was to find a way to insert an integer into the middle of an array of integers.
+
+#### Approach & Efficiency
+Through research and teamwork, a plan was devised via whiteboard to complete this challenge.
+
+#### Solution
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/Day2.jpg>Whiteboard<a/>
+  
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/challenges/ArrayShift.java>Code<a/>
+
+#### Credits
+Michelle, Mattäus and Greg from class assisted me with this project as well as geeksforgeeks.org and codescracker.com.
+
+
+
+
+
+
