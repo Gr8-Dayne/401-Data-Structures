@@ -66,7 +66,7 @@ TA James assisted me with my understanding of this Lab as well as https://www.ge
 
 
 
-## Class 6 Code Challenge - Linked list insertions
+## Class 6 Code Challenge - Linked List Insertions
 
 #### Summary
 
