@@ -63,3 +63,29 @@ Through research and TA James assistance, I was able to work through problems I 
 
 #### Credits
 TA James assisted me with my understanding of this Lab as well as https://www.geeksforgeeks.org/.
+
+
+
+## Class 6 Code Challenge - Linked list insertions
+
+#### Summary
+
+Myeslf and my partner for this assignment (Micah) whiteboarded and solved this issue presented to us through collaboration and research.
+
+#### Challenge Description
+
+Problem domain was to find a way to insert a node into an array in three seperate methods.
+
+#### Approach & Efficiency
+
+Through research and teamwork, a plan was devised via whiteboard to complete this challenge.
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+My partner Micah from class assisted me with this project as well as (websites).
