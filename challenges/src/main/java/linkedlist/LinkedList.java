@@ -77,6 +77,75 @@ public class LinkedList {
 
     }
 
+    // Code Challenge 06 (add to end, before, and after)
+
+    public void addToEnd(int value) {
+
+        if (this.head == null) {
+            head = new Node (value, null);
+
+        } else {
+
+            Node endNode = new Node (value, null);
+            Node currNode = this.head;
+            while (currNode.next != null) {
+                currNode = currNode.next;
+
+            }
+
+            currNode.next = endNode;
+
+        }
+    }
+
+    public boolean instantiateBefore(int val, int newValue) {
+
+        Node currNode = this.head;
+
+        while (currNode.next != null) {
+
+            if (currNode.next.valueData == val) {
+
+                Node beforeNode = new Node (newValue, );
+                beforeNode.next = currNode.next;
+                currNode.next = beforeNode;
+
+                return true;
+
+            }
+
+            currNode = currNode.next;
+
+        }
+
+        return false;
+        
+    }
+
+    public boolean instantiateAfter(int val, int newValue) {
+
+        Node currNode = this.head;
+
+        while (currNode.next != null) {
+
+            if (currNode.valueData == val) {
+
+                Node afterNode = new Node (newValue, );
+                afterNode.next = currNode.next;
+                currNode.next = afterNode;
+
+                return true;
+
+            }
+
+            currNode = currNode.next;
+
+        }
+
+        return false;
+
+    }
+
 }
 
 
