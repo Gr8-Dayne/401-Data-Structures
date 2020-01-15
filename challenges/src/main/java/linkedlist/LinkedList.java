@@ -24,7 +24,7 @@ public class LinkedList {
     }
 
     // Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-    public void insertHead(int headValue){
+    public void insertNode(int headValue){
 
         // New Head instantiation
         Node HeadNode = new Node(headValue, null);
@@ -77,9 +77,9 @@ public class LinkedList {
 
     }
 
-    // Code Challenge 06 (add to end, before, and after)
+    // Code Challenge 06 (add to end, add before, and add after)
 
-    public void addToEnd(int value) {
+    public void append(int value) {
 
         if (this.head == null) {
             head = new Node(value, null);
@@ -98,17 +98,17 @@ public class LinkedList {
         }
     }
 
-    public boolean instantiateBefore(int val, Node newValue) {
+    public boolean insertAfter(int val, int newValue) {
 
         Node currNode = this.head;
 
         while (currNode.next != null) {
 
-            if (currNode.next.valueData == val) {
+            if (currNode.valueData == val) {
 
-                Node beforeNode = new Node(val, newValue);
-                beforeNode.next = currNode.next;
-                currNode.next = beforeNode;
+                Node afterNode = new Node(newValue, null);
+                afterNode.next = currNode.next;
+                currNode.next = afterNode;
 
                 return true;
 
@@ -118,27 +118,45 @@ public class LinkedList {
 
         }
 
+        if (currNode.next == null) {
+            Node afterNode = new Node(newValue, null);
+            afterNode.next = currNode.next;
+            currNode.next = afterNode;
+
+            return true;
+        }
+
         return false;
 
     }
 
-    public boolean instantiateAfter(int val, Node newValue) {
+    public boolean insertBefore(int val, int newValue) {
 
-        Node currNode = this.head;
+        Node tempHead = this.head;
 
-        while (currNode.next != null) {
+        while (tempHead.next != null) {
 
-            if (currNode.valueData == val) {
+            if (tempHead.next.valueData == val) {
 
-                Node afterNode = new Node(val, newValue);
-                afterNode.next = currNode.next;
-                currNode.next = afterNode;
+                Node beforeNode = new Node(newValue, tempHead);
+                beforeNode.next = tempHead.next;
+                tempHead.next = beforeNode;
 
                 return true;
 
             }
 
-            currNode = currNode.next;
+            if (this.head.valueData == val) {
+
+                Node beforeNode = new Node(newValue, this.head);
+                beforeNode.next = this.head;
+                this.head = beforeNode;
+
+                return true;
+
+            }
+
+            tempHead = tempHead.next;
 
         }
 
