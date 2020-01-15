@@ -20,7 +20,7 @@ Through research and dedication, I wrote out what I was going to do (whiteboard 
 
 <a href=>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/kth/LinkedList.java>Code<a/>
 
 #### Credits
 
