@@ -2,6 +2,32 @@
 
 
 
+## Class 7 Code Challenge - k-th value from the end of a linked list.
+
+#### Summary
+
+I whiteboarded (on paper) and solved this issue presented to me through research and inquiries.
+
+#### Challenge Description
+
+Problem domain was to find a way to insert a node into an array in three seperate methods.
+
+#### Approach & Efficiency
+
+Through research and dedication, I wrote out what I was going to do (whiteboard method) and I researched and asked quetions when needed.
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+I flew solo on this project.
+
+
+
 ## Class 6 Code Challenge - Linked List Insertions
 
 #### Summary
