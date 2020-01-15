@@ -16,6 +16,11 @@ public class BinarySearchTest {
         System.out.println("actualOutput = " + actualOutput);
 
         assertEquals(0, actualOutput);
+
+    }
+
+}
+
         
 //        assertArrayEquals(arr, key);
 
@@ -44,6 +49,4 @@ public class BinarySearchTest {
 //
 //        // "Function" call
 //        assertArrayEquals(desiredOutputTwo, actualOutputTwo);
-    }
 
-}
