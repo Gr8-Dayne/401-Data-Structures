@@ -14,9 +14,13 @@ public class BinarySearchTest {
         int actualOutput = BinarySearch.BinarySearcher(arr, key);
 
         System.out.println("actualOutput = " + actualOutput);
+
+        assertEquals(0, actualOutput);
+
     }
 
 }
+
         
 //        assertArrayEquals(arr, key);
 
