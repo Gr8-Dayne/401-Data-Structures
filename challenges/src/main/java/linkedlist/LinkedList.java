@@ -1,5 +1,5 @@
-
 package linkedlist;
+
 
 public class LinkedList {
 
@@ -8,7 +8,7 @@ public class LinkedList {
     Node head;
 
     // Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-    class Node {
+    static class Node {
 
         int valueData;
         Node next;
@@ -82,11 +82,11 @@ public class LinkedList {
     public void addToEnd(int value) {
 
         if (this.head == null) {
-            head = new Node (value, null);
+            head = new Node(value, null);
 
         } else {
 
-            Node endNode = new Node (value, null);
+            Node endNode = new Node(value, null);
             Node currNode = this.head;
             while (currNode.next != null) {
                 currNode = currNode.next;
@@ -98,7 +98,7 @@ public class LinkedList {
         }
     }
 
-    public boolean instantiateBefore(int val, int newValue) {
+    public boolean instantiateBefore(int val, Node newValue) {
 
         Node currNode = this.head;
 
@@ -106,7 +106,7 @@ public class LinkedList {
 
             if (currNode.next.valueData == val) {
 
-                Node beforeNode = new Node (newValue, );
+                Node beforeNode = new Node(val, newValue);
                 beforeNode.next = currNode.next;
                 currNode.next = beforeNode;
 
@@ -119,10 +119,10 @@ public class LinkedList {
         }
 
         return false;
-        
+
     }
 
-    public boolean instantiateAfter(int val, int newValue) {
+    public boolean instantiateAfter(int val, Node newValue) {
 
         Node currNode = this.head;
 
@@ -130,7 +130,7 @@ public class LinkedList {
 
             if (currNode.valueData == val) {
 
-                Node afterNode = new Node (newValue, );
+                Node afterNode = new Node(val, newValue);
                 afterNode.next = currNode.next;
                 currNode.next = afterNode;
 
