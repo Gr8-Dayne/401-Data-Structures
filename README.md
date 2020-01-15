@@ -2,7 +2,7 @@
 
 
 
-## Class 7 Code Challenge - k-th value from the end of a linked list.
+## Class 7 Code Challenge - kth value from the end of a linked list
 
 #### Summary
 
@@ -10,7 +10,7 @@ I whiteboarded (on paper) and solved this issue presented to me through research
 
 #### Challenge Description
 
-Problem domain was to find a way to insert a node into an array in three seperate methods.
+The feature task was listed as: write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 #### Approach & Efficiency
 
