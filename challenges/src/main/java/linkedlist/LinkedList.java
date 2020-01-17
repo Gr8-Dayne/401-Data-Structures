@@ -164,6 +164,17 @@ public class LinkedList {
 
     }
 
+    public int kth(int positionFromEnd){
+
+        return ans;
+    }
+
+    public static LinkedList merge(LinkedList ll1, LinkedList ll2){
+
+
+        return ans;
+    }
+
 }
 
 
