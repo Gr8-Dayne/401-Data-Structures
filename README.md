@@ -2,29 +2,29 @@
 
 
 
-
 ## Class 8 Code Challenge - Merge Lists
 
 #### Summary
 
-
+I whiteboarded (on paper) and solved this issue presented to me through research and inquiries.
 
 #### Challenge Description
 
-
+The feature task was listed as: Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 #### Approach & Efficiency
 
-
+I first sought out the assistance of my TA, James, who gave me great advice to go off of. after i had been working at it for a while, I browsed the internet looking for any useful pointers. After that, it was basically trial and error.
 
 #### Solution
 
 <a href=>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/kth/LinkedList.java>Code<a/>
 
 #### Credits
 
+<a href=https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/>Geeks for Geeks</a> was a huge help to me in solving this challenge, as well as my TA James.
 
 
 
