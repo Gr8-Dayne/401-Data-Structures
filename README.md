@@ -2,6 +2,33 @@
 
 
 
+
+## Class 8 Code Challenge - Merge Lists
+
+#### Summary
+
+
+
+#### Challenge Description
+
+
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+
+
+
+
 ## Class 7 Code Challenge - kth value from the end of a linked list
 
 #### Summary
