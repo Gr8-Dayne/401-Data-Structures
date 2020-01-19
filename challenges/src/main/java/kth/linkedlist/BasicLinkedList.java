@@ -1,7 +1,7 @@
-package linkedlist;
+package kth.linkedlist;
 
 
-public class LinkedList {
+public class BasicLinkedList {
 
     // makes Node head stuff 'global' within public class
     // Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
@@ -164,16 +164,7 @@ public class LinkedList {
 
     }
 
-    public int kth(int positionFromEnd){
 
-        return ans;
-    }
-
-    public static LinkedList merge(LinkedList ll1, LinkedList ll2){
-
-
-        return ans;
-    }
 
 }
 

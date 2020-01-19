@@ -7,8 +7,6 @@ public class LinkedList {
     Node head;
     static int nodes;
 
-
-    // Node class instantiate
     static class Node {
         int valueData;
         Node next;
@@ -19,21 +17,15 @@ public class LinkedList {
         }
     }
 
-
-    // Baseline for LinkedLists
     public LinkedList() {
         this.head = null;
         nodes = 0;
     }
 
-
-    // Method to get current list count
     public int getListSize() {
         return nodes;
     }
 
-
-    // Node insertion (and count) method
     public void insertIntoList(int headValue) {
         if (this.head == null) {
             this.head = new Node(headValue);
@@ -45,8 +37,6 @@ public class LinkedList {
         nodes++;
     }
 
-
-    // Feature Method: Also throws exception/Will return feature data
     public int findTheValueData(int kilo) {
         int kIndex = this.getListSize() - kilo - 1;
         if (kIndex < 0) {
@@ -60,8 +50,6 @@ public class LinkedList {
         return currentNode.valueData;
     }
 
-
-    // toString method
     public String toString(){
         Node current = this.head;
         String overallStatement = "";
@@ -71,6 +59,36 @@ public class LinkedList {
             current = current.next;
         }
         return overallStatement + "null";
+    }
+
+    // Credit for this concept: https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+    public static Node cccc_combination(LinkedList list1, LinkedList list2) {
+
+        Node Katlyn1 = list1.head;
+        Node Katlyn2 = list2.head;
+        Node nodethaniel = new Node(0);
+        Node tail = nodethaniel;
+
+        while (true) {
+            if (Katlyn1 == null) {
+                tail.next = Katlyn2;
+                break;
+            }
+            if (Katlyn2 == null) {
+                tail.next = Katlyn1;
+                break;
+            }
+            // Arrow function in Java?
+            if (Katlyn1.valueData <= Katlyn2.valueData) {
+                tail.next = Katlyn1;
+                Katlyn1 = Katlyn1.next;
+            } else {
+                tail.next = Katlyn2;
+                Katlyn2 = Katlyn2.next;
+            }
+            tail = tail.next;
+        }
+        return nodethaniel.next;
     }
 }
 

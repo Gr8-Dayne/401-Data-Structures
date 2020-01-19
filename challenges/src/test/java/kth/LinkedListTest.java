@@ -48,6 +48,16 @@ public class LinkedListTest {
         assertEquals(expected, actual);
     }
 
+    // toString test
+    @Test public void testToString() {
+        LinkedList theStringining = new LinkedList();
+        theStringining.insertIntoList(0);
+        theStringining.insertIntoList(1);
+        theStringining.insertIntoList(0);
+        String expected = "{ 0 } => { 1 } => { 0 } => null";
+        String actual = theStringining.toString();
+        assertEquals(expected, actual);
+    }
 
     // “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
     @Test public void theKFactor_Start() {
@@ -65,6 +75,26 @@ public class LinkedListTest {
     @Test public void theKFactor_End() {
         int expected = 55;
         int actual = theKFactor.findTheValueData(0);
+        assertEquals(expected, actual);
+    }
+
+    @Test public void testMerge(){
+
+        LinkedList list1 = new LinkedList();
+        list1.insertIntoList(7);
+        list1.insertIntoList(5);
+        list1.insertIntoList(3);
+        list1.insertIntoList(1);
+
+        LinkedList list2 = new LinkedList();
+        list2.insertIntoList(6);
+        list2.insertIntoList(4);
+        list2.insertIntoList(2);
+
+        LinkedList.cccc_combination(list1, list2);
+
+        String expected = "{ 1 } => { 2 } => { 3 } => { 4 } => { 5 } => { 6 } => { 7 } => null";
+        String actual = list1.toString();
         assertEquals(expected, actual);
     }
 }

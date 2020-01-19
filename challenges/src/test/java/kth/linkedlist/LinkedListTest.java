@@ -1,4 +1,4 @@
-package linkedlist;
+package kth.linkedlist;
 
 
 import org.junit.Test;
@@ -8,13 +8,13 @@ import static org.junit.Assert.*;
 public class LinkedListTest {
 
     @Test public void emptyListTest() {
-        LinkedList list = new LinkedList();
+        BasicLinkedList list = new BasicLinkedList();
         assertNull(list.head);
     }
 
     @Test public void insertHeadTest() {
 
-        LinkedList list = new LinkedList();
+        BasicLinkedList list = new BasicLinkedList();
         list.insertNode(10);
         assertEquals(10, list.head.valueData);
 
@@ -22,7 +22,7 @@ public class LinkedListTest {
 
     @Test public void verifyHead() {
 
-        LinkedList list = new LinkedList();
+        BasicLinkedList list = new BasicLinkedList();
         list.insertNode(20);
         list.insertNode(10);
         list.insertNode(50);
@@ -34,7 +34,7 @@ public class LinkedListTest {
 //    Will return false when searching for a value in the linked list that does not exist
     @Test public void booleanValueSearch() {
 
-        LinkedList list = new LinkedList();
+        BasicLinkedList list = new BasicLinkedList();
         list.insertNode(20);
         list.insertNode(10);
         list.insertNode(50);
@@ -64,7 +64,7 @@ public class LinkedListTest {
 //    Can properly return a collection of all the values that exist in the linked list
     @Test public void toStringTest() {
 
-        LinkedList list = new LinkedList();
+        BasicLinkedList list = new BasicLinkedList();
         list.insertNode(20);
         list.insertNode(10);
         list.insertNode(50);
@@ -80,7 +80,7 @@ public class LinkedListTest {
     // Append a Node to the end of the Linked List
     @Test public void appendTest() {
 
-        LinkedList appendList = new LinkedList();
+        BasicLinkedList appendList = new BasicLinkedList();
 
         appendList.insertNode(3);
         appendList.insertNode(2);
@@ -97,7 +97,7 @@ public class LinkedListTest {
     // Insert Node directly after specified target
     @Test public void insertAfterTest() {
 
-        LinkedList afterList = new LinkedList();
+        BasicLinkedList afterList = new BasicLinkedList();
 
         afterList.insertNode(5);
         afterList.insertNode(4);
@@ -116,7 +116,7 @@ public class LinkedListTest {
     // Insert Node directly after specified target (the last Node in the Linked List)
     @Test public void insertAfterTestTheSequel() {
 
-        LinkedList afterListAgain = new LinkedList();
+        BasicLinkedList afterListAgain = new BasicLinkedList();
 
         afterListAgain.insertNode(1);
         afterListAgain.insertNode(2);
@@ -135,7 +135,7 @@ public class LinkedListTest {
     // Insert Node directly before specified target
     @Test public void insertBeforeTest() {
 
-        LinkedList beforeList = new LinkedList();
+        BasicLinkedList beforeList = new BasicLinkedList();
 
         beforeList.insertNode(10);
         beforeList.insertNode(20);
@@ -154,7 +154,7 @@ public class LinkedListTest {
     // Insert Node directly before specified target (the first Node in the Linked List
     @Test public void insertBeforeTestTheSequel() {
 
-        LinkedList listBeforeTime = new LinkedList();
+        BasicLinkedList listBeforeTime = new BasicLinkedList();
 
         listBeforeTime.insertNode(50);
         listBeforeTime.insertNode(40);
