@@ -6,7 +6,6 @@ public class Queue {
     Node back;
 
     public void enqueue(int numberVal) {
-
         if (front == null){
             front = new Node(numberVal, null);
             back = front;
