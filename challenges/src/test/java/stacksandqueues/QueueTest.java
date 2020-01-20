@@ -46,12 +46,9 @@ public class QueueTest {
         queueForTesting.enqueue(1);
         queueForTesting.enqueue(2);
         queueForTesting.enqueue(3);
-
         int expected = queueForTesting.peek();
         int actual = queueForTesting.front.valueData;
-
         assertEquals(expected, actual);
-
     }
 
     @Test public void isEmptyQueueTest() {
