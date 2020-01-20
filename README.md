@@ -5,24 +5,26 @@
 ## Lab 10 - Stack and Queue Implementation
 
 #### Summary
+
 First assigment with Stacks and Queues.
 
 #### Challenge Description
 
-
+Create Stack class and Queue class that work.
 
 #### Approach & Efficiency
 
-
+Using testing and system out print lines, I created methods specifically tailored to the feature tasks of this lab.
 
 #### Solution
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/stacksandqueues>Code<a/>
   
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/test/java/stacksandqueues>Tests<a/>
 
 #### Credits
 
+My TA James assisted me throughout this lab.
 
 
 
