@@ -2,6 +2,30 @@
 
 
 
+## Class 11 Code Challenge - Queue with Stacks
+
+#### Summary
+
+I whiteboarded and solved this issue presented to me through research and inquiries to TA James and my fellow classmates.
+
+#### Challenge Description
+
+The feature task was listed as: Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects.
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/PsuedoQueue.jpg>Whiteboard<a/>
+  
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/stacksandqueues>Code<a/>
+
+#### Credits
+
+
+
 ## Lab 10 - Stack and Queue Implementation
 
 #### Summary
