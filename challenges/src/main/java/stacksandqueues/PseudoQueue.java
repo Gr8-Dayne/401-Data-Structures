@@ -12,7 +12,9 @@ public class PseudoQueue {
 
     public void pseudoQueueEnqueue(int pseudoVal) {
         if (front == null){
-        push(pseudoVal);
+        front = new Node(pseudoVal, null);
+        back = front;
+        back.next = null;
         } else {
             back.next = new Node(pseudoVal, null);
             back = back.next;
@@ -61,5 +63,4 @@ public class PseudoQueue {
     public void display(){
         System.out.println(front.toString());
     }
-
 }
