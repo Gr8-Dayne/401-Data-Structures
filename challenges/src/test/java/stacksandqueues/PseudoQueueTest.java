@@ -8,38 +8,32 @@ import static org.junit.Assert.*;
 public class PseudoQueueTest {
 
     // Input Stack
-    PseudoQueue pseudoQueueA;
+    PseudoQueue forEnqueue;
     // Output Stack
-    PseudoQueue pseudoQueueB;
+    PseudoQueue forDequeue;
 
-    // Enqueue Test
+    // Test forEnqueue getting values/nodes
     @Test public void pseudoQueueEnqueueTest() {
-        pseudoQueueA = new PseudoQueue();
-        pseudoQueueB = new PseudoQueue();
-        pseudoQueueA.pseudoQueueEnqueue(1);
-        pseudoQueueA.pseudoQueueEnqueue(2);
-        pseudoQueueA.pseudoQueueEnqueue(3);
-        pseudoQueueB.pseudoQueueEnqueue(7);
-        pseudoQueueA.display();
-        pseudoQueueB.display();
-        int actualA = pseudoQueueA.front.valueData;
-        int actualB = pseudoQueueB.front.valueData;
-        assertEquals(1, actualA);
-        assertEquals(7, actualB);
+        forEnqueue = new PseudoQueue();
+        forDequeue = new PseudoQueue();
+        forEnqueue.enqueue(1);
+        forEnqueue.enqueue(2);
+        forEnqueue.enqueue(3);
+        forEnqueue.enqueue(7);
+        System.out.println(forEnqueue.forEnqueue.peek());
+        assertEquals(7, forEnqueue.forEnqueue.peek());
     }
 
     // Dequeue Test
     @Test public void pseudoQueueDequeueTest() {
-        pseudoQueueA = new PseudoQueue();
-        pseudoQueueB = new PseudoQueue();
-        pseudoQueueA.pseudoQueueEnqueue(1);
-        pseudoQueueA.pseudoQueueEnqueue(2);
-        pseudoQueueA.pseudoQueueEnqueue(3);
-        pseudoQueueA.display();
-        pseudoQueueB.display();
-        int actual = pseudoQueueA.pseudoQueueDequeue();
-        pseudoQueueA.display();
-        pseudoQueueB.display();
+        forEnqueue = new PseudoQueue();
+        forDequeue = new PseudoQueue();
+        forEnqueue.enqueue(1);
+        forEnqueue.enqueue(2);
+        forEnqueue.enqueue(3);
+        System.out.println(forEnqueue.forEnqueue.top);
+        int actual = forEnqueue.dequeue();
+        System.out.println(forEnqueue.forEnqueue.top);
         assertEquals(1, actual);
     }
 }

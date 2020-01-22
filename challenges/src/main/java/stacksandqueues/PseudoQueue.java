@@ -1,66 +1,38 @@
 package stacksandqueues;
 
+// Credit: https://coderbyte.com/algorithm/implement-queue-using-two-stacks
 
 public class PseudoQueue {
 
-    Node front;
-    Node back;
+    // Stack one
+    public Stack forEnqueue;
+    // Stack two
+    public Stack forDequeue;
 
-    public void push(int numberVal) {
-        front = new Node(numberVal, front);
+    public PseudoQueue(){
+        forEnqueue = new Stack();
+        forDequeue = new Stack();
     }
 
-    public void pseudoQueueEnqueue(int pseudoVal) {
-        if (front == null){
-        front = new Node(pseudoVal, null);
-        back = front;
-        back.next = null;
-        } else {
-            back.next = new Node(pseudoVal, null);
-            back = back.next;
+    public void enqueue(int value){
+
+        while(!forDequeue.isEmpty()) {
+
+            forEnqueue.push(forDequeue.pop());
+
         }
+        forEnqueue.push(value);
     }
 
-//    public void enqueue(int numberVal) {
-//        if (front == null){
-//            front = new Node(numberVal, null);
-//            back = front;
-//        } else {
-//            back.next = new Node(numberVal, null);
-//            back = back.next;
-//        }
-//    }
+    public int dequeue(){
 
-    public int pop() {
-        int popVal = front.valueData;
-        front = front.next;
-        return popVal;
-    }
+        while(!forDequeue.isEmpty()){
 
-    public int pseudoQueueDequeue() {
+            forDequeue.push(forEnqueue.pop());
 
-        int popVal = front.valueData;
-        front = front.next;
-        return popVal;
-
-//        int dequeueVal = 0;
-//        if(front != null){
-//            dequeueVal = front.valueData;
-//            front = front.next;
-//        }
-//        return dequeueVal;
-    }
-
-//    public int dequeue() {
-//        int dequeueVal = 0;
-//        if(front != null){
-//            dequeueVal = front.valueData;
-//            front = front.next;
-//        }
-//        return dequeueVal;
-//    }
-
-    public void display(){
-        System.out.println(front.toString());
+        }
+        return forDequeue.pop();
     }
 }
+
+
