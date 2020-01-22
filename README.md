@@ -2,6 +2,34 @@
 
 
 
+## Class 12 Code Challenge - First-in, First out Animal Shelter.
+
+#### Summary
+
+I whiteboarded and solved this issue presented to me through research and inquiries to TA James and my fellow classmates.
+
+#### Challenge Description
+
+The feature task was listed as: Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+
+* enqueue(animal)
+* dequeue(pref)
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/PsuedoQueue.jpg>Whiteboard<a/>
+  
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/stacksandqueues>Code<a/>
+
+#### Credits
+
+
+
+
 ## Class 11 Code Challenge - Queue with Stacks
 
 #### Summary
@@ -23,7 +51,7 @@ The feature task was listed as: Create a brand new PseudoQueue class. Do not use
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/stacksandqueues>Code<a/>
 
 #### Credits
-
+My classmate Daisy and <a href=https://coderbyte.com/algorithm/implement-queue-using-two-stacks>Coderbyte</a> helped me complete this challenge.
 
 
 ## Lab 10 - Stack and Queue Implementation
