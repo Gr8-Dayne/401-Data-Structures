@@ -6,7 +6,7 @@
 
 #### Summary
 
-I whiteboarded and solved this issue presented to me through research and inquiries to TA James and my fellow classmates.
+
 
 #### Challenge Description
 
@@ -21,9 +21,9 @@ The feature task was listed as: Create a class called AnimalShelter which holds 
 
 #### Solution
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/assets/PsuedoQueue.jpg>Whiteboard<a/>
+<a href=>Whiteboard<a/>
   
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/stacksandqueues>Code<a/>
+<a href=>Code<a/>
 
 #### Credits
 
