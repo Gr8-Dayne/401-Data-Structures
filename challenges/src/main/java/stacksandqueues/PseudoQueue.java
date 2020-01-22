@@ -14,6 +14,7 @@ public class PseudoQueue {
         forDequeue = new Stack();
     }
 
+    // Enqueue
     public void enqueue(int value){
 
         while(!forDequeue.isEmpty()) {
@@ -24,6 +25,7 @@ public class PseudoQueue {
         forEnqueue.push(value);
     }
 
+    // Dequeue
     public int dequeue(){
 
         while(!forDequeue.isEmpty()){
