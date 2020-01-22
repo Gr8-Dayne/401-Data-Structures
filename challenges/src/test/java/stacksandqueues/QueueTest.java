@@ -53,6 +53,6 @@ public class QueueTest {
 
     @Test public void isEmptyQueueTest() {
         queueForTesting = new Queue();
-        assertEquals(queueForTesting.isEmpty(), true);
+        assertTrue(queueForTesting.isEmpty());
     }
 }
