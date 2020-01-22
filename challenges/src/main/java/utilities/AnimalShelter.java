@@ -7,13 +7,31 @@ import stacksandqueues.Queue;
 public class AnimalShelter {
 
     // Queue one
-    public Queue catQueue ;
+    Queue catQueue ;
     // Queue two
-    public Queue dogQueue;
+    Queue dogQueue;
+
+    public AnimalShelter() {
+        dogQueue = new Queue();
+        catQueue = new Queue();
+    }
 
     // Enqueue
     // Adds animal to the shelter, animal can be either a dog or a cat object
-    public void enqueue(Object animal){
+    // Credit: https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html
+    public void enqueue(String animal){
+
+        if (animal.equals("cat")){
+
+            catQueue.enqueue(animal);
+
+        } else if (animal.equals("dog")){
+
+            dogQueue.enqueue(animal);
+
+        } else {
+            throw new IllegalArgumentException("Please pick 'cat' or 'dog'");
+        }
 
     }
 
