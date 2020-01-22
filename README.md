@@ -2,7 +2,7 @@
 
 
 
-## Class 12 Code Challenge - First-in, First out Animal Shelter.
+## Class 12 Code Challenge - First-in, First out Animal Shelter
 
 #### Summary
 
