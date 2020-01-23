@@ -3,6 +3,8 @@ package utilities;
 
 import stacksandqueues.Queue;
 
+import java.util.LinkedList;
+
 
 public class AnimalShelter {
 
@@ -20,6 +22,9 @@ public class AnimalShelter {
     // Adds animal to the shelter, animal can be either a dog or a cat object
     // Credit: https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html
     public void enqueue(String animal){
+
+        // Idea given to me by TA James
+        // Queue<Dog> dogQueue = new LinkedList<>();
 
         if (animal.equals("cat")){
 
