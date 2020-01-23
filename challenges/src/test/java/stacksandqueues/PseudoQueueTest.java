@@ -20,7 +20,7 @@ public class PseudoQueueTest {
         forEnqueue.enqueue(2);
         forEnqueue.enqueue(3);
         forEnqueue.enqueue(7);
-        System.out.println(forEnqueue.forEnqueue.peek());
+        // System.out.println(forEnqueue.forEnqueue.peek());
         assertEquals(7, forEnqueue.forEnqueue.peek());
     }
 
@@ -33,7 +33,6 @@ public class PseudoQueueTest {
         forEnqueue.enqueue(3);
         System.out.println(forEnqueue.forEnqueue.top);
         int actual = forEnqueue.dequeue();
-        System.out.println(forEnqueue.forEnqueue.top);
         assertEquals(1, actual);
     }
 }

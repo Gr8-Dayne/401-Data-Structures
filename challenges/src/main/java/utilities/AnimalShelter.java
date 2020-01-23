@@ -1,21 +1,19 @@
 package utilities;
 
 
-import stacksandqueues.Queue;
-
 import java.util.LinkedList;
 
 
 public class AnimalShelter {
 
     // Queue one
-    Queue catQueue ;
+    LinkedList<String> catQueue ;
     // Queue two
-    Queue dogQueue;
+    LinkedList<String> dogQueue;
 
     public AnimalShelter() {
-        dogQueue = new Queue();
-        catQueue = new Queue();
+        dogQueue = new LinkedList();
+        catQueue = new LinkedList();
     }
 
     // Enqueue
@@ -28,11 +26,11 @@ public class AnimalShelter {
 
         if (animal.equals("cat")){
 
-            catQueue.enqueue(animal);
+            catQueue.addLast(animal);
 
         } else if (animal.equals("dog")){
 
-            dogQueue.enqueue(animal);
+            dogQueue.addLast(animal);
 
         } else {
             throw new IllegalArgumentException("Please pick 'cat' or 'dog'");
@@ -41,9 +39,19 @@ public class AnimalShelter {
     }
 
     // Dequeue
-    // Returns either a dog or a cat, ff pref is not "dog" or "cat" then return null
+    // Returns either a dog or a cat, if pref is not "dog" or "cat" then return null
     public void dequeue(String pref){
 
-    }
+        if (pref.equals("cat")){
 
+            catQueue.getFirst();
+
+        } else if (pref.equals("dog")){
+
+            dogQueue.getFirst();
+
+        } else {
+            throw new IllegalArgumentException("null");
+        }
+    }
 }

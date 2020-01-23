@@ -6,9 +6,9 @@ package stacksandqueues;
 
 public class PseudoQueue {
 
-    // Stack one
+    // Stack One
     public Stack forEnqueue;
-    // Stack two
+    // Stack Two
     public Stack forDequeue;
 
     public PseudoQueue(){
@@ -18,22 +18,16 @@ public class PseudoQueue {
 
     // Enqueue
     public void enqueue(int value){
-
         while(!forDequeue.isEmpty()) {
-
             forEnqueue.push(forDequeue.pop());
-
         }
         forEnqueue.push(value);
     }
 
     // Dequeue
     public int dequeue(){
-
-        while(!forDequeue.isEmpty()){
-
+        while(!forEnqueue.isEmpty()){
             forDequeue.push(forEnqueue.pop());
-
         }
         return forDequeue.pop();
     }
