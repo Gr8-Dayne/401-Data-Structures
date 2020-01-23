@@ -2,6 +2,34 @@
 
 
 
+## Class 13 Code Challenge - Multi-bracket Validation
+
+#### Summary
+
+
+
+#### Challenge Description
+
+The feature task was listed as: Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced.
+
+* ()
+* []
+* {}
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/MultiBracket.jpg>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+
+
 ## Class 12 Code Challenge - First-in, First out Animal Shelter
 
 #### Summary
