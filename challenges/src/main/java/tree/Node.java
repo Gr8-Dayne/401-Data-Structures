@@ -1,5 +1,6 @@
 package tree;
 
+
 public class Node {
 
     Node left;
@@ -7,16 +8,14 @@ public class Node {
     Integer nodeValue;
 
     // Crystal helped me figure out the below configuration
-    Node(int nodeValue) {
+    Node(Integer nodeValue) {
         this.nodeValue = nodeValue;
-        this.left = null;
-        this.right = null;
+        left = null;
+        right = null;
     }
 
     @Override
     public String toString() {
-        return "Node{" +
-                "nodeValue=" + nodeValue +
-                '}';
+        return "Node{" + "nodeValue=" + nodeValue + '}';
     }
 }

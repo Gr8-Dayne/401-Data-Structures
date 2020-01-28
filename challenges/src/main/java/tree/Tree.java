@@ -1,11 +1,10 @@
 package tree;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 import java.util.LinkedList;
 
-// Credit: https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html
 
+// Credit: https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html
 public class Tree {
 
     Node root;
