@@ -88,13 +88,13 @@ Brackets:
 
 #### Approach & Efficiency
 
-
+Lot's of reading about different Data types.
 
 #### Solution
 
 <a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/MultiBracket.jpg>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/utilities/MultiBracketValidation.java>Code<a/>
 
 #### Credits
 
