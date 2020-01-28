@@ -60,11 +60,11 @@ The feature task was listed as:
 
 #### Approach & Efficiency
 
-
+Through research and trial and error, code was written to complete today's feature tasks.
 
 #### Solution
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/tree>Code<a/>
 
 #### Credits
 
@@ -121,7 +121,7 @@ The feature task was listed as: Create a class called AnimalShelter which holds 
 
 <a href=>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/utilities/AnimalShelter.java>Code<a/>
 
 #### Credits
 
@@ -140,7 +140,7 @@ The feature task was listed as: Create a brand new PseudoQueue class. Do not use
 
 #### Approach & Efficiency
 
-
+Using testing and system out print lines, I created methods specifically tailored to the feature tasks of this lab.
 
 #### Solution
 
