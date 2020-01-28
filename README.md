@@ -2,6 +2,75 @@
 
 
 
+## Class 16 Code Challenge - FizzBuzz
+
+#### Summary
+
+
+
+#### Challenge Description
+
+The feature task was listed as:
+
+* Write a function called FizzBuzzTree which takes a tree as an argument.
+
+* Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+* If the value is divisible by 3, replace the value with “Fizz”
+
+* If the value is divisible by 5, replace the value with “Buzz”
+
+* If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+
+* If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+TA James and Instructor Nicholas assisted me with this Code Challenge
+
+
+
+## Class 15 Code Challenge - Binary Tree and BST Implementation
+
+#### Summary
+
+
+
+#### Challenge Description
+
+The feature task was listed as: 
+
+* Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+
+* Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
+
+* Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+  
+<a href=>Code<a/>
+
+#### Credits
+
+TA James and Instructor Nicholas assisted me with this Code Challenge
+
+
 ## Class 13 Code Challenge - Multi-bracket Validation
 
 #### Summary
