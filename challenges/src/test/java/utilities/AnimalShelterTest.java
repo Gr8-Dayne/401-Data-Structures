@@ -3,36 +3,39 @@ package utilities;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import java.util.LinkedList;
 
 
+// Credit: https://www.journaldev.com/13244/java-queue
 public class AnimalShelterTest {
 
-    // Cat LinkedList
-    LinkedList<String> catQueue;
-    // Dog LinkedList
-    LinkedList<String> dogQueue;
+    AnimalShelter animalHouse = new AnimalShelter();
 
-//    @Test
-//    public void enqueue() {
-//        catQueue = new LinkedList();
-//        dogQueue = new LinkedList();
-//        forEnqueue.enqueue(1);
-//        forEnqueue.enqueue(2);
-//        forEnqueue.enqueue(3);
-//        forEnqueue.enqueue(7);
-//        // System.out.println(forEnqueue.forEnqueue.peek());
-//        assertEquals(7, forEnqueue.forEnqueue.peek());
-//    }
-//
-//    @Test
-//    public void dequeue() {
-//        catQueue = new LinkedList();
-//        dogQueue = new LinkedList();
-//        forEnqueue.enqueue(1);
-//        forEnqueue.enqueue(2);
-//        forEnqueue.enqueue(3);
-//        System.out.println(forEnqueue.forEnqueue.top);
-//        int actual = forEnqueue.dequeue();
-//    }
+    Animal oneDog = new Dog("Cooper");
+    Animal oneCat = new Cat("Mousya");
+    Animal twoDog = new Dog("Ryder");
+    Animal twoCat = new Cat("Tiger");
+
+    @Test public void enqueueTest() {
+
+        animalHouse.enqueue((Dog) oneDog);
+        animalHouse.enqueue((Dog) twoDog);
+        animalHouse.enqueue((Cat) oneCat);
+        animalHouse.enqueue((Cat) twoCat);
+
+        Animal actual = animalHouse.dequeue("cat");
+        assertEquals(oneCat.name, actual.name);
+    }
+
+    @Test public void dequeueTest() {
+
+        animalHouse.enqueue((Cat) oneCat);
+        animalHouse.enqueue((Dog) oneDog);
+        animalHouse.enqueue((Cat) twoCat);
+        animalHouse.enqueue((Dog) twoDog);
+
+        animalHouse.dequeue("dog");
+
+        Animal actual = animalHouse.dequeue("dog");
+        assertEquals(twoDog.name , actual.name);
+    }
 }

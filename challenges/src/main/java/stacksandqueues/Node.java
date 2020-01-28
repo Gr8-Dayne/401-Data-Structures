@@ -3,8 +3,8 @@ package stacksandqueues;
 
 public class Node {
 
-    int valueData;
-    Node next;
+    public int valueData;
+    public Node next;
 
     Node(int valueData, Node next) {
         this.valueData = valueData;
