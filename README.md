@@ -104,7 +104,7 @@ Brackets:
 
 #### Summary
 
-
+I re-wrote a couple of classes to fit the needs of this specific package as changing the originals would cause problems for other pieces of my code.
 
 #### Challenge Description
 
@@ -115,7 +115,7 @@ The feature task was listed as: Create a class called AnimalShelter which holds 
 
 #### Approach & Efficiency
 
-
+More trial and error that I would have liked but overall, an assignment I won't soon forget.
 
 #### Solution
 
