@@ -13,26 +13,26 @@ public class AnimalShelterTest {
     // Dog LinkedList
     LinkedList<String> dogQueue;
 
-    @Test
-    public void enqueue() {
-        catQueue = new LinkedList();
-        dogQueue = new LinkedList();
-        forEnqueue.enqueue(1);
-        forEnqueue.enqueue(2);
-        forEnqueue.enqueue(3);
-        forEnqueue.enqueue(7);
-        // System.out.println(forEnqueue.forEnqueue.peek());
-        assertEquals(7, forEnqueue.forEnqueue.peek());
-    }
-
-    @Test
-    public void dequeue() {
-        catQueue = new LinkedList();
-        dogQueue = new LinkedList();
-        forEnqueue.enqueue(1);
-        forEnqueue.enqueue(2);
-        forEnqueue.enqueue(3);
-        System.out.println(forEnqueue.forEnqueue.top);
-        int actual = forEnqueue.dequeue();
-    }
+//    @Test
+//    public void enqueue() {
+//        catQueue = new LinkedList();
+//        dogQueue = new LinkedList();
+//        forEnqueue.enqueue(1);
+//        forEnqueue.enqueue(2);
+//        forEnqueue.enqueue(3);
+//        forEnqueue.enqueue(7);
+//        // System.out.println(forEnqueue.forEnqueue.peek());
+//        assertEquals(7, forEnqueue.forEnqueue.peek());
+//    }
+//
+//    @Test
+//    public void dequeue() {
+//        catQueue = new LinkedList();
+//        dogQueue = new LinkedList();
+//        forEnqueue.enqueue(1);
+//        forEnqueue.enqueue(2);
+//        forEnqueue.enqueue(3);
+//        System.out.println(forEnqueue.forEnqueue.top);
+//        int actual = forEnqueue.dequeue();
+//    }
 }
