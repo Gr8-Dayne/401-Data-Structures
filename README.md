@@ -31,9 +31,9 @@ The feature task was listed as:
 
 #### Solution
 
-<a href=>Whiteboard<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC16WB.png>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/utilities/FizzBuzzTree.java>Code<a/>
 
 #### Credits
 
