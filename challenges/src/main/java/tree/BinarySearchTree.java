@@ -10,7 +10,7 @@ public class BinarySearchTree {
     public Node root;
 
     // returns an array of the values, ordered appropriately.
-    public LinkedList<Integer> inOrder(Node t){
+    public LinkedList<Integer> inOrder(Node<Integer> t){
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
 
@@ -37,7 +37,7 @@ public class BinarySearchTree {
         root = addNodethy(root, value);
     }
 
-    private Node addNodethy(Node current, int value) {
+    private Node addNodethy(Node<Integer> current, int value) {
         if (current == null) {
             return new Node(value);
         }
@@ -64,7 +64,7 @@ public class BinarySearchTree {
 
     // accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
     // Credit: https://people.cs.umass.edu/~barring/cs187f12/disc/BinarySearchTree.java
-    public boolean contains(Node root, Integer target) {
+    public boolean contains(Node<Integer> root, Integer target) {
             if (root == null) {
                 return false;
             }

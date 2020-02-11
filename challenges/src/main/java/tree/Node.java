@@ -1,18 +1,20 @@
 package tree;
 
 
-public class Node {
+public class Node<E> {
 
-    Node left;
-    Node right;
-    Integer nodeValue;
+    public Node<E> left;
+    public Node<E> right;
+    public E nodeValue;
 
     // Crystal helped me figure out the below configuration
-    Node(Integer nodeValue) {
+    public Node(E nodeValue) {
         this.nodeValue = nodeValue;
         left = null;
         right = null;
     }
+
+    public Node() {}
 
     @Override
     public String toString() {
