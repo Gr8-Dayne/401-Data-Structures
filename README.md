@@ -50,6 +50,8 @@ Output(s):
   
 <a href=>Code<a/>
 
+<a href=>BLOG.md<a/>
+
 #### Credits
 
 Daisy helped me with thinking through this problem to find a solution.
