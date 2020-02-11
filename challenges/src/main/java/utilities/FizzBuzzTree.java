@@ -1,27 +1,47 @@
 package utilities;
 
+
+import tree.Tree;
+import tree.Node;
+
+
 public class FizzBuzzTree {
 
+    // Credit: https://howtodoinjava.com/puzzles/fizzbuzz-solution-java/
+    private static String fizzBuzzActual(int value){
+        if (value % 3 == 0 && value % 5 == 0){
+            return  "FizzBuzz";
 
+        }else if(value % 5 == 0){
+            return "Buzz";
 
+        }else if(value % 3 == 0){
+            return  "Fizz";
+
+        }else{
+            return String.format("%d", value);
+        }
+    }
+
+    public static Tree<String> fizzBuzzTree(Tree<Integer> inputTree){
+        Tree<String> newTree = new Tree<>();
+        newTree.root = fizzBuzzTreeRoot(inputTree.root);
+        return newTree;
+    }
+
+    private static Node<String> fizzBuzzTreeRoot(Node<Integer> root){
+        Node<String> newNode = new Node<>();
+        if(root != null){
+
+            Node<String> left = fizzBuzzTreeRoot(root.left);
+            Node<String> right  = fizzBuzzTreeRoot(root.right);
+            newNode.nodeValue = fizzBuzzActual(root.nodeValue);
+
+            newNode.left = left;
+            newNode.right = right;
+        }
+        return newNode;
+    }
 }
 
 
-
-//    Write a function called FizzBuzzTree which takes a tree as an argument.
-//
-//    Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
-
-
-
-//    If the value is divisible by 3, replace the value with “Fizz”
-//
-//    If the value is divisible by 5, replace the value with “Buzz”
-//
-//    If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
-//
-//    If the value is not divisible by 3 or 5, simply turn the number into a String.
-
-
-
-//    Return the new tree.
