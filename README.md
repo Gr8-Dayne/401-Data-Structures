@@ -2,6 +2,58 @@
 
 
 
+## Class 26 Code Challenge - Insertion Sort
+
+#### Summary
+
+
+
+#### Challenge Description
+
+The feature task was listed as:
+
+* Review the pseudocode provided, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+
+
+#### Approach & Efficiency
+
+    InsertionSort(int[] arr)
+
+      FOR i = 1 to arr.length
+
+        int j <-- i - 1
+        int temp <-- arr[i]
+
+        WHILE j >= 0 AND temp < arr[j]
+          arr[j + 1] <-- arr[j]
+          j <-- j - 1
+
+        arr[j + 1] <-- temp
+
+Input: 
+
+* Sample Array: [8, 4, 23, 42, 16, 15]
+
+Output(s):
+
+* Reverse-sorted: [20, 18, 12, 8, 5, -2]
+
+* Few uniques: [5, 12, 7, 5, 5, 7]
+
+* Nearly-sorted: [2, 3, 5, 7, 13, 11]
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+Daisy helped me with thinking through this problem to find a solution.
+
+
+
 ## Class 17 Code Challenge - Breadth-first Traversal
 
 #### Summary
