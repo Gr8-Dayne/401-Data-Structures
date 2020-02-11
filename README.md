@@ -2,11 +2,40 @@
 
 
 
-## Class 16 Code Challenge - FizzBuzz
+## Class 17 Code Challenge - Breadth-first Traversal
 
 #### Summary
 
 
+
+#### Challenge Description
+
+The feature task was listed as:
+
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+
+#### Approach & Efficiency
+
+
+
+#### Solution
+
+<a href=>Whiteboard<a/>
+  
+<a href=>Code<a/>
+
+#### Credits
+
+ assisted me with this Code Challenge
+
+
+
+## Class 16 Code Challenge - FizzBuzz
+
+#### Summary
+
+I hate that it took me this long to accomplish this task but I am happy that I finished it in spite of me being sick.
 
 #### Challenge Description
 
@@ -27,7 +56,7 @@ The feature task was listed as:
 
 #### Approach & Efficiency
 
-
+Through research online, I was able to solve this challenge.
 
 #### Solution
 
