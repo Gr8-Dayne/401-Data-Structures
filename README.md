@@ -47,8 +47,6 @@ Output(s):
 * Nearly-sorted: [2, 3, 5, 7, 13, 11]
 
 #### Solution
-
-<a href=>Whiteboard<a/>
   
 <a href=>Code<a/>
 
