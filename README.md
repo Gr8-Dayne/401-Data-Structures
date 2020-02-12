@@ -34,11 +34,9 @@ The feature task was listed as:
 
         arr[j + 1] <-- temp
 
-Input: 
+Inputs: 
 
 * Sample Array: [8, 4, 23, 42, 16, 15]
-
-Other Inputs:
 
 * Reverse-sorted: [20, 18, 12, 8, 5, -2]
 
@@ -47,14 +45,17 @@ Other Inputs:
 * Nearly-sorted: [2, 3, 5, 7, 13, 11]
 
 #### Solution
-  
-<a href=>Code<a/>
 
-<a href=>BLOG.md<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/BLOG.md>BLOG.md<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/InsertionSort.java>Code<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/insertionsort/InsertionSortTest.java>Tests<a/>
 
 #### Credits
 
-Daisy helped me with thinking through this problem to find a solution.
+Daisy helped me with thinking through this problem to find a solution as well as with the BLOG.md.<br>
+Websites: <a href=https://www.geeksforgeeks.org/insertion-sort/>geeksforgeeks/insertion-sort<a/> and <a href=https://www.geeksforgeeks.org/bubble-sort/>geeksforgeeks/bubble-sort<a/>.
 
 
 
