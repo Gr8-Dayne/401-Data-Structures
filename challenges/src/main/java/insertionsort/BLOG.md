@@ -1,6 +1,6 @@
 # Challenge 26 - Insertion Sort
 
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/InsertionSort.java)</br>
 
 ### Challenge Description
 InsertionSort is a sorting algorithm that traverses an array it receives. During the transversing, [i] and [j] are comparing and switching as required therefore sorting is occurring.</br>
