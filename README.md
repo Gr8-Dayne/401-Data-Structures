@@ -38,7 +38,7 @@ Input:
 
 * Sample Array: [8, 4, 23, 42, 16, 15]
 
-Output(s):
+Other Inputs:
 
 * Reverse-sorted: [20, 18, 12, 8, 5, -2]
 
