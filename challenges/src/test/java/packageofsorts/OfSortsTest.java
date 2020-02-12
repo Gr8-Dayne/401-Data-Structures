@@ -1,4 +1,4 @@
-package insertionsort;
+package packageofsorts;
 
 
 import org.junit.Test;
@@ -7,11 +7,16 @@ import static insertionsort.InsertionSort.printArray;
 import static org.junit.Assert.*;
 
 
-public class InsertionSortTest {
+public class OfSortsTest {
+
+    //
+    // 02/11/2020
+    //
 
     int[] inputArr;
 
-    // THIS TEST WORKS and throws the exception I want it to, but looks bad when running all tests so it is commented out.
+    // THE TEST BELOW WORKS and throws the exception I want it to, but looks bad when running all tests so it is commented out.
+
 //    @Test
 //    public void emptyArrayTest() {
 //
@@ -88,5 +93,10 @@ public class InsertionSortTest {
         // System.out.println("actual = " + actual);
         assertEquals(expected, actual);
     }
+
+    //
+    // 02/12/2020
+    //
+
 
 }

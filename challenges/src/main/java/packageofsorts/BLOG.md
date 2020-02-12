@@ -8,14 +8,10 @@ MergeSort is a combining algorithm that traverses two arrays it receives. (Go mo
 
 ### Approach & Efficiency
 Time: O(2)</br>
-(Go more in-depth here)
-</br>
-</br>
+(Go more in-depth here)</br></br>
 
 Space: O(1)</br>
-(Go more in-depth here)
-</br>
-</br>
+(Go more in-depth here)</br></br>
 
 ### Pseudo Code
 
