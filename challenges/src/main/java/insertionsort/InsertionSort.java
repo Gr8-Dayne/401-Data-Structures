@@ -1,25 +1,38 @@
 package insertionsort;
 
 
+import java.util.Arrays;
+
+
 public class InsertionSort{
 
-    public static void insertionSort(int[] arr) {
+    // Credit: https://www.geeksforgeeks.org/insertion-sort/
+    public static int[] insertionSort(int[] arr) {
 
+        if (arr.length == 0){
+            throw new IllegalArgumentException("Empty Array Detected - Operation Aborted");
+        }
 
+        int arrIndexLength = arr.length;
 
+        for (int i = 1; i < arrIndexLength; ++i) {
+
+            int temp = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && arr[j] > temp) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = temp;
+        }
+        return arr;
+    }
+
+    // Credit: https://www.geeksforgeeks.org/bubble-sort/
+    public static String printArray(int[] arr) {
+        return Arrays.toString(arr);
     }
 }
 
 
-//    InsertionSort(int[] arr)
-//
-//    FOR i = 1 to arr.length
-//
-//        int j <-- i - 1
-//        int temp <-- arr[i]
-//
-//        WHILE j >= 0 AND temp < arr[j]
-//        arr[j + 1] <-- arr[j]
-//        j <-- j - 1
-//
-//        arr[j + 1] <-- temp
