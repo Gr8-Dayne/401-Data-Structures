@@ -113,4 +113,36 @@ public class OfSortsTest {
         inputArr = new int[]{2, 3, 5, 7, 13, 11};
 
     }
+
+    //
+    // 02/13/2020
+    //
+
+    @Test
+    public void quickSortTest1() {
+
+        inputArr = new int[]{8, 4, 23, 42, 16, 15};
+
+    }
+
+    @Test
+    public void quickSortTest2() {
+
+        inputArr = new int[]{20, 18, 12, 8, 5, -2};
+
+    }
+
+    @Test
+    public void quickSortTest3() {
+
+        inputArr = new int[]{5, 12, 7, 5, 5, 7};
+
+    }
+
+    @Test
+    public void quickSortTest4() {
+
+        inputArr = new int[]{2, 3, 5, 7, 13, 11};
+
+    }
 }

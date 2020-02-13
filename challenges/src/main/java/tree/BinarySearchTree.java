@@ -1,19 +1,17 @@
 package tree;
 
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 
 public class BinarySearchTree {
 
-    // What benefit would having public here provide?
     public Node root;
 
-    // returns an array of the values, ordered appropriately.
     public LinkedList<Integer> inOrder(Node<Integer> t){
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
-
         if (t != null) {
             LinkedList<Integer> left = inOrder(t.left);
             answer.addAll(left);
@@ -24,7 +22,6 @@ public class BinarySearchTree {
         return answer;
     }
 
-    // accepts a value, and adds a new node with that value in the correct location in the binary search tree.
     // Credit: https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/
     // Credit: https://www.baeldung.com/java-binary-tree
 
@@ -62,7 +59,6 @@ public class BinarySearchTree {
         return treeString;
     }
 
-    // accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
     // Credit: https://people.cs.umass.edu/~barring/cs187f12/disc/BinarySearchTree.java
     public boolean contains(Node<Integer> root, Integer target) {
             if (root == null) {
@@ -75,6 +71,38 @@ public class BinarySearchTree {
                 return contains(root.left, target);
             }
         return contains(root.right, target);
+    }
+
+    //
+    // Code Challenge 17
+    //
+
+    // Credit: Daisy helped me generate this method
+    public static ArrayList<Integer> breadthFirst(Node<Integer> currentNode) {
+
+        ArrayList<Integer> breadthList = new ArrayList<>();
+
+        if (currentNode == null) {
+            throw new IllegalArgumentException("Empty ArrayList Detected - Operation Aborted");
+        } else {
+
+            breadthList.add(currentNode.nodeValue);
+
+            if (currentNode.left != null) {
+                breadthList.add(currentNode.left.nodeValue);
+            } if (currentNode.right != null) {
+                breadthList.add(currentNode.right.nodeValue);
+            }
+        }
+        return breadthList;
+    }
+
+    //
+    // Code Challenge 18
+    //
+
+    public static void findMaximumValue() {
+
     }
 }
 

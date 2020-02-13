@@ -16,15 +16,10 @@ public class Tree<E> {
     public LinkedList<Integer> preOrder(Node<Integer> t){
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
-
         if (t != null) {
-
             answer.add(t.nodeValue);
-
             answer.addAll(preOrder(t.left));
-
             answer.addAll(preOrder(t.right));
-
         }
         return answer;
     }
@@ -47,15 +42,10 @@ public class Tree<E> {
     public LinkedList<Integer> inOrder(Node<Integer> t){
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
-
         if (t != null) {
-
             answer.addAll(inOrder(t.left));
-
             answer.add(t.nodeValue);
-
             answer.addAll(inOrder(t.right));
-
         }
         return answer;
     }
@@ -64,15 +54,10 @@ public class Tree<E> {
     public LinkedList<Integer> postOrder(Node<Integer> t){
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
-
         if (t != null) {
-
             answer.addAll(postOrder(t.left));
-
             answer.addAll(postOrder(t.right));
-
             answer.add(t.nodeValue);
-
         }
         return answer;
     }
