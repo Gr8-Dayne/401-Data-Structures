@@ -71,7 +71,10 @@ public class OfSorts {
         return arr;
     }
 
-        // Merge
+    //
+    // Pseudo Code:
+    //
+
 //        ALGORITHM Merge(left, right, arr)
 //          DECLARE i <-- 0
 //          DECLARE j <-- 0
@@ -96,20 +99,49 @@ public class OfSorts {
     // 02/13/2020
     //
 
-    public static int[] quickSort(int[] arr, int[] left, int[] right){
+    // Credit: I have a source for the below code but I forgot the website, I will find it for submission of "Code Challenge 28 - Quick Sort"
+    public void quickSort(int [] arr, int left, int right){
 
-        int arrIndexLength = arr.length;
-        int mid = arrIndexLength/2;
-//        int left = arr[0 to mid];
-//        int right = arr[mid to arrIndexLength];
-
-        if (arrIndexLength == 0){
-            throw new IllegalArgumentException("Empty Array Detected - Operation Aborted");
-
+        if(left < right){
+            int position = partition(arr, left, right);
+            quickSort(arr, left, position -1);  //if position is 5(Index of pivot). sorts from 0 to 4
+            quickSort(arr, position + 1, right);//if position is 5. sorts from 6 to the end
         }
+    }
 
-//        else if (left < right){
-//        }
+    public int partition(int [] arr, int left, int right){
+
+        //left is 0
+        //right is 5
+        int pivot = arr[right];  //sets pivot as the last item in the array
+        int low = left -1; // low starts as -1
+
+        for(int i = left; i <right; i++){
+            if(arr[i] <= pivot){  // all items less than the pivot value startint at index 0
+                low++;
+                swap(arr, i, low);
+            }
+        }
+        swap(arr, right, low +1);
+        return low + 1;  // returns index of pivot after rearrangement
+    }
+
+    public void swap(int [] arr, int i, int low){
+
+        // low is 0
+        // i is 0. index
+        // [7,9,3,4,7,1,7]
+        int temp;
+        temp = arr[i];  //temp = arr[0] =7
+        arr[i]= arr[low];  // element at 0 becomes 7
+        arr[low]= temp;
+    }
+
+    //
+    // Pseudo Code:
+    //
+
+
 
 //    ALGORITHM QuickSort(arr, left, right)
 //    if left < right
@@ -119,6 +151,8 @@ public class OfSorts {
 //    QuickSort(arr, left, position - 1)
         // Sort the right
 //    QuickSort(arr, position + 1, right)
+
+
 
 //    ALGORITHM Partition(arr, left, right)
         // set a pivot value as a point of reference
@@ -136,14 +170,13 @@ public class OfSorts {
         // return the pivot index point
 //     return low + 1
 
+
+
 //    ALGORITHM Swap(arr, i, low)
 //    DEFINE temp;
 //    temp <-- arr[i]
 //    arr[i] <-- arr[low]
 //    arr[low] <-- temp
-
-        return arr;
-    }
 }
 
 
