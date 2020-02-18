@@ -56,15 +56,15 @@ ALGORITHM Swap(arr, i, low)
 [SEE MY CODE]()</br>
 
 ### Challenge Description
-MergeSort is a combining algorithm that traverses two arrays it receives. (Go more in-depth here)
+MergeSort is a combining algorithm that recursively calls upon itself to divide it's given array in half until there is only one object in each of the newly-divided arrays. The method then re-traces it's steps to sort the values of the arrays as they come back together until they are one array again, although this time, the array is in order.
 </br>
 
 ### Approach & Efficiency
-Time: O(2)</br>
-(Go more in-depth here)</br></br>
+Time: O(n Log n)</br>
+</br></br>
 
-Space: O(1)</br>
-(Go more in-depth here)</br></br>
+Space: O(n)</br>
+</br></br>
 
 ### Pseudo Code
 
