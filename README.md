@@ -214,11 +214,11 @@ Websites: <a href=https://www.geeksforgeeks.org/insertion-sort/>geeksforgeeks/in
 
 
 
-## Class 17 Code Challenge - Breadth-first Traversal
+## Class 18 Code Challenge - Maximum Value
 
 #### Summary
 
-
+This was far easier once I took a crack at it after doing CC17, not sure why.
 
 #### Challenge Description
 
@@ -233,13 +233,41 @@ The feature task was listed as:
 
 #### Solution
 
-<a href=>Whiteboard<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC18.png>Whiteboard<a/>
   
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/tree/Tree.java>Code<a/>
 
 #### Credits
 
- assisted me with this Code Challenge
+People and assets that assisted me with this Code Challenge are sited within my code.
+
+
+
+## Class 17 Code Challenge - Breadth-first Traversal
+
+#### Summary
+
+This took me FAR longer than I hoped it would. I think in total I spent about 6 hours on this (a big part of it was researching what I missed in class and modifying previously created classes to be more "generic").
+
+#### Challenge Description
+
+The feature task was listed as:
+
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+#### Approach & Efficiency
+
+Through research online and a careful "plan as I go" approach to White Boarding, I was able to solve this challenge.
+
+#### Solution
+
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC17.png>Whiteboard<a/>
+  
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/tree/Tree.java>Code<a/>
+
+#### Credits
+
+Daisy assisted me with better understanding this Code Challenge. Additionally, citations can be found throughout my code.
 
 
 
@@ -264,7 +292,6 @@ The feature task was listed as:
 * If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 
 * If the value is not divisible by 3 or 5, simply turn the number into a String.
-
 
 #### Approach & Efficiency
 
