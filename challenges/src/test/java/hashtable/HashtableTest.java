@@ -7,17 +7,19 @@ import static org.junit.Assert.assertEquals;
 
 public class HashtableTest {
 
-    Hashtable stringVault = new Hashtable(4);
+    Hashtable stringVault = new Hashtable(8);
 
     @Test
     public void hashTest() {
         stringVault.add(1, "Mattäus");
         stringVault.add(2, "Sergei");
         stringVault.add(3, "Shane");
+        stringVault.add(4, "Daisy");
+        stringVault.add(5, "Dayne");
 
-        int expected = 2;
-        int actual = stringVault.hash("Sergei");
-
+        // What is going on here?
+        int expected = 1;
+        int actual = stringVault.hash("Shane");
         assertEquals(expected, actual);
     }
 
@@ -26,12 +28,18 @@ public class HashtableTest {
         stringVault.add(1, "Mattäus");
         stringVault.add(2, "Sergei");
         stringVault.add(3, "Shane");
-
+        stringVault.add(4, "Daisy");
+        stringVault.add(5, "Dayne");
 
     }
 
     @Test
     public void getTest() {
+        stringVault.add(1, "Mattäus");
+        stringVault.add(2, "Sergei");
+        stringVault.add(3, "Shane");
+        stringVault.add(4, "Daisy");
+        stringVault.add(5, "Dayne");
 
     }
 

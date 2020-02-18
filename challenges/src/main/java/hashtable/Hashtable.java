@@ -27,7 +27,7 @@ public class Hashtable {
     public void add(Integer key, String value) {
 
         System.out.println("key.toString: " + key.toString());
-        System.out.println("key.toString: " + value);
+        System.out.println("value.toString: " + value);
 
         int hashKey = hash(key.toString());
         this.map[hashKey] = value;
