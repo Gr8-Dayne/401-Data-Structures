@@ -62,15 +62,16 @@ ALGORITHM Swap(arr, i, low)
 
 #### Solution
 
-<a href=>BLOG.md<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/BLOG.md>BLOG.md<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java>Code<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/packageofsorts/OfSortsTest.java>Tests<a/>
 
 #### Credits
 
-Who helped me? WHO!?
+People and assets that assisted me with this Code Challenge are sited within my code.
 
 
 
@@ -143,15 +144,16 @@ ALGORITHM Merge(left, right, arr)
 
 #### Solution
 
-<a href=>BLOG.md<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/BLOG.md>BLOG.md<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java>Code<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/packageofsorts/OfSortsTest.java>Tests<a/>
 
 #### Credits
 
-Who helped me? WHO!?
+People and assets that assisted me with this Code Challenge are sited within my code.
 
 
 
@@ -201,11 +203,11 @@ Inputs:
 
 #### Solution
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/BLOG.md>BLOG.md<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/BLOG.md>BLOG.md<a/>
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/InsertionSort.java>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java>Code<a/>
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/insertionsort/InsertionSortTest.java>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/packageofsorts/OfSortsTest.java>Tests<a/>
 
 #### Credits
 
