@@ -1,24 +1,39 @@
 package hashtable;
 
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 
 public class Hashtable {
 
-    Integer[] immovable = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int size;
+    String[] map;
 
-    LinkedList linkedTable = new LinkedList();
+    public Hashtable (int size){
+        this.size = size;
+        this.map = new String[size];
+    }
 
     // Takes in an arbitrary key and returns an index in the collection.
-    public Integer hash() {
+    private int hash(String key) {
+        int hashValue = 0;
 
-        return null;
+        for(int i = 0; i < key.length(); i++) {
+            hashValue += (int) key.charAt(i);
+        }
+        hashValue = (hashValue * 599) % this.size;
+
+        return hashValue;
     }
 
     // This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
     public void add(Integer key, String value) {
 
+        System.out.println("key.toString: " + key.toString());
+        System.out.println("key.toString: " + value);
+
+        int hashKey = hash(key.toString());
+        this.map[hashKey] = value;
     }
 
     // Takes in the key and returns the value from the table.

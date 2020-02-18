@@ -2,29 +2,49 @@ package hashtable;
 
 
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 
 public class HashtableTest {
 
+    Hashtable stringVault = new Hashtable(11);
+
     @Test
-    public void hash() {
+    public void hashTest() {
+        stringVault.add(1, "Mattäus");
+        stringVault.add(2, "Sergei");
+        stringVault.add(3, "Shane");
+
+        
+        int actual = stringVault.hash("Sergei");
+
+        assertEquals();
+    }
+
+    @Test
+    public void addTest() {
+        stringVault.add(1, "Mattäus");
+        stringVault.add(2, "Sergei");
+        stringVault.add(3, "Shane");
+
 
     }
 
     @Test
-    public void get() {
+    public void getTest() {
 
     }
 
     @Test
-    public void contains() {
+    public void containsTest() {
+
+    }
+
+    @Test
+    public void emptyHashtableTest() {
 
     }
 }
-
-//linkedTable.add(1, "Shane");
-//linkedTable.add(2, "Sergei");
-//linkedTable.add(3, "Mattäus");
 
 //    Adding a key/value to your hashtable results in the value being in the data structure
 
