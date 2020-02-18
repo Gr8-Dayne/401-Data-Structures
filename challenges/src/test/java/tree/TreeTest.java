@@ -3,10 +3,8 @@ package tree;
 
 import org.junit.Before;
 import org.junit.Test;
-
+import static org.junit.Assert.assertEquals;
 import java.util.LinkedList;
-
-import static org.junit.Assert.*;
 
 
 public class TreeTest {
@@ -25,32 +23,27 @@ public class TreeTest {
         test.root.right = new Node<>(10);
     }
 
-    // Credit: TA James
-    // test.prePrint(test.root);
-
-    // Can successfully return a collection from a pre-order traversal
     @Test public void preOrderTest() {
         String expected = "[7, 1, 10]";
         String actual = test.preOrder(test.root).toString();
         assertEquals(expected, actual);
-        // System.out.println(test.preOrder(test.root));
     }
 
-    // Can successfully return a collection from an inorder traversal
     @Test public void inOrderTest() {
         String expected = "[1, 7, 10]";
         String actual = test.inOrder(test.root).toString();
         assertEquals(expected, actual);
-//         System.out.println(test.inOrder(test.root));
     }
 
-    // Can successfully return a collection from a post-order traversal
     @Test public void postOrderTest() {
         String expected = "[1, 10, 7]";
         String actual = test.postOrder(test.root).toString();
         assertEquals(expected, actual);
-        // System.out.println(test.postOrder(test.root).toString());
     }
+
+    //
+    // Code Challenge 17
+    //
 
     // Happy Path Test
     @Test
@@ -72,7 +65,6 @@ public class TreeTest {
     // PLEASE BE ADVISED: THIS TEST IS SUPPOSED TO FAIL, AND IT FAILS BEAUTIFULLY
     // IT IS COMMENTED OUT SO ALL OTHER TESTS CAN BE CONFIRMED
     //
-
 //    @Test
 //    public void breadthWithQueueExpectedFailureTest(){
 //        Tree<Integer> breadthList = new Tree<>();
@@ -85,7 +77,6 @@ public class TreeTest {
     // PLEASE BE ADVISED: THIS TEST IS SUPPOSED TO FAIL, AND IT FAILS BEAUTIFULLY
     // IT IS COMMENTED OUT SO ALL OTHER TESTS CAN BE CONFIRMED
     //
-
 //    @Test
 //    public void breadthWithQueueEdgeCaseTest(){
 //
@@ -100,4 +91,52 @@ public class TreeTest {
 //
 //        assertNotEquals(" ", actual);
 //    }
+
+    //
+    // Code Challenge 18
+    //
+
+    // Happy Path Test
+    @Test
+    public void maximumValueTest() {
+        Tree<Integer> maximusList = new Tree<>();
+        maximusList.root = new Node<>(15);
+        maximusList.root.left = new Node<>(40);
+        maximusList.root.right = new Node<>(20);
+        maximusList.root.left.left = new Node<>(100);
+        maximusList.root.left.right = new Node<>(70);
+        maximusList.root.right.left = new Node<>(70);
+        maximusList.root.right.right = new Node<>(90);
+        int actual = maximusList.findMaximumValue();
+        assertEquals(100, actual);
+    }
+
+    //
+    // Expected Failure: Empty Tree
+    // PLEASE BE ADVISED: THIS TEST IS SUPPOSED TO FAIL, AND IT FAILS BEAUTIFULLY
+    // IT IS COMMENTED OUT SO ALL OTHER TESTS CAN BE CONFIRMED
+    //
+//    @Test
+//    public void maximumValueEmptyTest(){
+//        Tree<Integer> maximusList = new Tree<>();
+//        int actual = maximusList.findMaximumValue();
+//        assertNull(actual);
+//    }
+
+    // Edge Case: Team Rocket
+    // In case the reference was missed: Get Ready for trouble; Make it double
+    @Test
+    public void maximumValueTeamRocketTest(){
+        Tree<Integer> maximusList = new Tree<>();
+        maximusList.root = new Node<>(15);
+        maximusList.root.left = new Node<>(40);
+        maximusList.root.right = new Node<>(20);
+        maximusList.root.left.left = new Node<>(100);
+        maximusList.root.left.right = new Node<>(70);
+        maximusList.root.right.left = new Node<>(70);
+        maximusList.root.right.right = new Node<>(100);
+        Integer expected = 100;
+        Integer actual = maximusList.findMaximumValue();
+        assertEquals(expected, actual);
+    }
 }

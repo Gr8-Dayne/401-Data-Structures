@@ -8,9 +8,9 @@ import static org.junit.Assert.*;
 
 public class BinarySearchTreeTest {
 
-    Node root;
+    Node<Integer> root;
     BinarySearchTree pineTree = new BinarySearchTree();
-    LinkedList<Integer> birchList;
+    LinkedList birchList;
     Tree<Integer> breadthList;
 
     // Can successfully instantiate an empty tree

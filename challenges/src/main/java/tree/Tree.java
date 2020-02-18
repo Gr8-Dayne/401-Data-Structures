@@ -3,6 +3,7 @@ package tree;
 
 import stacksandqueues.Queue;
 import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 
 // Credit: https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html
@@ -90,7 +91,7 @@ public class Tree<E> {
         if (rootNode.nodeValue == null) {
             System.out.println(" ");
             System.out.println("-----OPERATION ABORTED-----");
-            throw new IllegalArgumentException("NODE VALUE IS NULL");
+            throw new IllegalArgumentException("UNABLE TO ACCEPT NULL ROOT NODE");
         }
 
         Queue<Node> queueForBreadth = new Queue<>();
@@ -112,8 +113,25 @@ public class Tree<E> {
     // Code Challenge 18
     //
 
-    public static void findMaximumValue() {
-
+    // Credit: https://docs.oracle.com/javase/7/docs/api/java/util/NoSuchElementException.html
+    public Integer findMaximumValue(){
+        if (this.root == null){
+            System.out.println(" ");
+            System.out.println("-----OPERATION ABORTED-----");
+            throw new NoSuchElementException("UNABLE TO ACCEPT NULL ROOT NODE");
+        }
+        return findMaximumValue(this.root);
+    }
+    // Credit: Daisy helped me with this Method
+    private Integer findMaximumValue(Node<E> rootNode){
+        Integer potentialTopGun = (Integer) rootNode.nodeValue;
+        if (rootNode.left != null){
+            potentialTopGun = Math.max(potentialTopGun, findMaximumValue(rootNode.left));
+        }
+        if (rootNode.right != null){
+            potentialTopGun = Math.max(potentialTopGun, findMaximumValue(rootNode.right));
+        }
+        return potentialTopGun;
     }
 }
 
