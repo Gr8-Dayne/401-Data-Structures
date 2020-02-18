@@ -70,28 +70,35 @@ public class Tree<E> {
 
     // Credit: https://www.geeksforgeeks.org/level-order-tree-traversal/
     public LinkedList<E> breadthWithQueue(){
-
-        LinkedList<E> valList = new LinkedList<>();
-
-        breadthWithQueue(this.root, valList);
-
-        return valList;
+        try {
+            LinkedList<E> valList = new LinkedList<>();
+            breadthWithQueue(this.root, valList);
+            return valList;
+        } catch (NullPointerException e) {
+            if(this.root == null){
+                System.out.println(" ");
+                System.out.println("-----OPERATION ABORTED-----");
+                throw new IllegalArgumentException("UNABLE TO ACCEPT ARGUMENT");
+            }
+        }
+        return null;
     }
 
     // Credit: https://stackoverflow.com/questions/5262308/how-do-implement-a-breadth-first-traversal
-    private void breadthWithQueue (Node<E> rootNode, LinkedList<E> valList) {
+    private void breadthWithQueue (Node<E> rootNode, LinkedList<E> valList){
+
+        if (rootNode.nodeValue == null) {
+            System.out.println(" ");
+            System.out.println("-----OPERATION ABORTED-----");
+            throw new IllegalArgumentException("NODE VALUE IS NULL");
+        }
 
         Queue<Node> queueForBreadth = new Queue<>();
         Node<E> nodethaniel = new Node<>();
-
         queueForBreadth.enqueue(rootNode);
-
         while(!queueForBreadth.isEmpty()){
-
             nodethaniel = queueForBreadth.dequeue();
-
             valList.add(nodethaniel.nodeValue);
-
             if(nodethaniel.left != null){
                 queueForBreadth.enqueue(nodethaniel.left);
             }
