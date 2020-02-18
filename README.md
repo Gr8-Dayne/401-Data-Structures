@@ -229,7 +229,7 @@ The feature task was listed as:
 
 #### Approach & Efficiency
 
-
+Through research online and a careful "plan as I go" approach to White Boarding, I was able to solve this challenge.
 
 #### Solution
 
