@@ -21,6 +21,17 @@ Implement a Hashtable with the following methods:
 <!-- Description of each method publicly available in each of your hashtable -->
 
 
+#### Solution
+
+<a href=>BLOG.md<a/>
+
+<a href=>Code<a/>
+
+<a href=>Tests<a/>
+
+
+
+
 
 ## Class 28 Code Challenge - Merge Sort
 
@@ -85,7 +96,6 @@ ALGORITHM Swap(arr, i, low)
 * Nearly-sorted: [2, 3, 5, 7, 13, 11]
 
 #### Solution
-
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/BLOG.md>BLOG.md<a/>
 
@@ -167,7 +177,6 @@ ALGORITHM Merge(left, right, arr)
 * Nearly-sorted: [2, 3, 5, 7, 13, 11]
 
 #### Solution
-
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/BLOG.md>BLOG.md<a/>
 
