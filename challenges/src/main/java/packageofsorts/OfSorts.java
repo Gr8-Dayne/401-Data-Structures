@@ -1,11 +1,14 @@
 package packageofsorts;
 
+
 import java.util.Arrays;
+import java.util.NoSuchElementException;
+
 
 public class OfSorts {
 
     //
-    // 02/11/2020
+    // Code Challenge 26
     //
 
     // Credit: https://www.geeksforgeeks.org/insertion-sort/
@@ -37,66 +40,59 @@ public class OfSorts {
     }
 
     //
-    // 02/12/2020
+    // Code Challenge 27
     //
 
-    public static int[] mergeSort(int[] arr) {
+    // Credit: https://www.geeksforgeeks.org/merge-sort/
+    // Credit: https://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html
+    public static int[] mergeSort(int[] pa) {
 
-        // MergeSort
-//        ALGORITHM Mergesort(arr)
-//                DECLARE n <-- arr.length
+        int distance = pa.length;
+        int m = distance / 2;
 
-//        if n > 1
-//          DECLARE mid <-- n/2
-//          DECLARE left <-- arr[0...mid]
-//          DECLARE right <-- arr[mid...n]
-//          // sort the left side
-//          Mergesort(left)
-//          // sort the right side
-//          Mergesort(right)
-//          // merge the sorted left and right sides together
-//          Merge(left, right, arr)
+        // Credit: In-Class Code Review
+        int[] l = Arrays.copyOfRange(pa, 0, m);
+        int[] r = Arrays.copyOfRange(pa, m, distance);
 
-        int arrIndexLength = arr.length;
+        if (distance == 0){
+            System.out.println(" ");
+            System.out.println("-----OPERATION ABORTED-----");
+            throw new NoSuchElementException("UNABLE TO ACCEPT EMPTY ARRAY");
 
-        if (arrIndexLength == 0){
-            throw new IllegalArgumentException("Empty Array Detected - Operation Aborted");
+        } else if (distance == 1) {
+            return pa;
 
-        } else if (arrIndexLength > 1){
-
-            int mid = arrIndexLength/2;
-//            int left = arr[0 to mid];
-//            int right = arr[mid to arrIndexLength];
+        } else if (distance > 1) {
+            mergeSort(l);
+            mergeSort(r);
+            merge(pa, l, r, m, distance - m);
         }
-        return arr;
+        return pa;
+    }
+
+    // Credit: https://www.baeldung.com/java-merge-sort
+    // Credit: https://stackabuse.com/merge-sort-in-java/
+    private static void merge(int[] pa, int[] l, int[] r, int numOne, int numTwo) {
+
+        int i = 0, j = 0, k = 0;
+
+        while (i < numOne && j < numTwo) {
+            if (l[i] <= r[j]) {
+                pa[k++] = l[i++];
+            } else {
+                pa[k++] = r[j++];
+            }
+        }
+        while (i < numOne) {
+            pa[k++] = l[i++];
+        }
+        while (j < numTwo) {
+            pa[k++] = r[j++];
+        }
     }
 
     //
-    // Pseudo Code:
-    //
-
-//        ALGORITHM Merge(left, right, arr)
-//          DECLARE i <-- 0
-//          DECLARE j <-- 0
-//          DECLARE k <-- 0
-
-//        while i < left.length && j < right.length
-//          if left[i] <= right[j]
-//              arr[k] <-- left[i]
-//              i <-- i + 1
-//          else
-//              arr[k] <-- right[j]
-//              j <-- j + 1
-
-//          k <-- k + 1
-
-//        if i = left.length
-//            set remaining entries in arr to remaining values in right
-//        else
-//            set remaining entries in arr to remaining values in left
-
-    //
-    // 02/13/2020
+    // Code Challenge 28
     //
 
     // Credit: I have a source for the below code but I forgot the website, I will find it for submission of "Code Challenge 28 - Quick Sort"
@@ -136,47 +132,6 @@ public class OfSorts {
         arr[i]= arr[low];  // element at 0 becomes 7
         arr[low]= temp;
     }
-
-    //
-    // Pseudo Code:
-    //
-
-
-
-//    ALGORITHM QuickSort(arr, left, right)
-//    if left < right
-        // Partition the array by setting the position of the pivot value
-//    DEFINE position <-- Partition(arr, left, right)
-        // Sort the left
-//    QuickSort(arr, left, position - 1)
-        // Sort the right
-//    QuickSort(arr, position + 1, right)
-
-
-
-//    ALGORITHM Partition(arr, left, right)
-        // set a pivot value as a point of reference
-//    DEFINE pivot <-- arr[right]
-        // create a variable to track the largest index of numbers lower than the defined pivot
-//    DEFINE low <-- left - 1
-//            for i <- left to right do
-//            if arr[i] <= pivot
-//    low++
-//    Swap(arr, i, low)
-
-        // place the value of the pivot location in the middle.
-        // all numbers smaller than the pivot are on the left, larger on the right.
-//    Swap(arr, right, low + 1)
-        // return the pivot index point
-//     return low + 1
-
-
-
-//    ALGORITHM Swap(arr, i, low)
-//    DEFINE temp;
-//    temp <-- arr[i]
-//    arr[i] <-- arr[low]
-//    arr[low] <-- temp
 }
 
 
