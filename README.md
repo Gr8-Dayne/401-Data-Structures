@@ -24,4 +24,4 @@
 
 #### Older Challenges
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-15-code-challenge---binary-tree-and-bst-implementation>CC15 - BST Implementation
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-15-code-challenge---binary-tree-and-bst-implementation>CC15 and the rest
