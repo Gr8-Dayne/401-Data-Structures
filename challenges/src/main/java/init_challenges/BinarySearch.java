@@ -1,5 +1,5 @@
 
-package challenges;
+package init_challenges;
 
 public class BinarySearch {
 

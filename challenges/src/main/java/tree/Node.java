@@ -7,7 +7,6 @@ public class Node<E> {
     public Node<E> right;
     public E nodeValue;
 
-    // Crystal helped me figure out the below configuration
     public Node(E nodeValue) {
         this.nodeValue = nodeValue;
         left = null;

@@ -16,8 +16,8 @@ public class StackTest {
         stackForTesting.push(1);
         stackForTesting.push(2);
         stackForTesting.push(3);
-        int actual = stackForTesting.peek();
-        assertEquals(3, actual);
+
+        assertEquals("3", stackForTesting.peek());
     }
 
     @Test public void popFromStackTest() {
@@ -25,8 +25,7 @@ public class StackTest {
         stackForTesting.push(1);
         stackForTesting.push(2);
         stackForTesting.push(3);
-        int actual = stackForTesting.peek();
-        assertEquals(actual, stackForTesting.pop());
+        assertEquals(stackForTesting.peek(), stackForTesting.pop().toString());
     }
 
     @Test public void popMultipleFromStackTest() {
@@ -45,9 +44,7 @@ public class StackTest {
         stackForTesting.push(1);
         stackForTesting.push(2);
         stackForTesting.push(3);
-        int expected = stackForTesting.peek();
-        int actual = stackForTesting.top.valueData;
-        assertEquals(expected, actual);
+        assertEquals(stackForTesting.peek(), stackForTesting.top.valueData.toString());
     }
 
     @Test public void isEmptyStackTest() {

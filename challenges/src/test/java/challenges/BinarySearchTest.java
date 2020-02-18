@@ -1,6 +1,7 @@
 
 package challenges;
 
+import init_challenges.BinarySearch;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

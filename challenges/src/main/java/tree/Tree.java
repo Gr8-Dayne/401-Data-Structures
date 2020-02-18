@@ -1,6 +1,7 @@
 package tree;
 
 
+import stacksandqueues.Queue;
 import java.util.LinkedList;
 
 
@@ -41,7 +42,7 @@ public class Tree<E> {
     // returns an array of the values, ordered appropriately.
     public LinkedList<Integer> inOrder(Node<Integer> t){
 
-        LinkedList<Integer> answer = new LinkedList<Integer>();
+        LinkedList<Integer> answer = new LinkedList<>();
         if (t != null) {
             answer.addAll(inOrder(t.left));
             answer.add(t.nodeValue);
@@ -60,5 +61,51 @@ public class Tree<E> {
             answer.add(t.nodeValue);
         }
         return answer;
+    }
+
+    //
+    // Code Challenge 17
+    //
+
+
+    // Credit: https://www.geeksforgeeks.org/level-order-tree-traversal/
+    public LinkedList<E> breadthWithQueue(){
+
+        LinkedList<E> valList = new LinkedList<>();
+
+        breadthWithQueue(this.root, valList);
+
+        return valList;
+    }
+
+    // Credit: https://stackoverflow.com/questions/5262308/how-do-implement-a-breadth-first-traversal
+    private void breadthWithQueue (Node<E> rootNode, LinkedList<E> valList) {
+
+        Queue<Node> queueForBreadth = new Queue<>();
+        Node<E> nodethaniel = new Node<>();
+
+        queueForBreadth.enqueue(rootNode);
+
+        while(!queueForBreadth.isEmpty()){
+
+            nodethaniel = queueForBreadth.dequeue();
+
+            valList.add(nodethaniel.nodeValue);
+
+            if(nodethaniel.left != null){
+                queueForBreadth.enqueue(nodethaniel.left);
+            }
+            if(nodethaniel.right != null){
+                queueForBreadth.enqueue(nodethaniel.right);
+            }
+        }
+    }
+
+    //
+    // Code Challenge 18
+    //
+
+    public static void findMaximumValue() {
+
     }
 }

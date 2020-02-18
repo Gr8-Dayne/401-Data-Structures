@@ -11,11 +11,12 @@ public class BinarySearchTreeTest {
     Node root;
     BinarySearchTree pineTree = new BinarySearchTree();
     LinkedList<Integer> birchList;
+    Tree<Integer> breadthList;
 
     // Can successfully instantiate an empty tree
     @Test public void instantiateEmptyTest() {
         birchList = pineTree.inOrder(root);
-        System.out.println("birchList: " + birchList.toString());
+//        System.out.println("birchList: " + birchList.toString());
         String expected = "[]";
         String actual = birchList.toString();
         assertEquals(expected, actual);
@@ -27,7 +28,7 @@ public class BinarySearchTreeTest {
         pineTree.add(7);
         birchList = pineTree.inOrder(pineTree.root);
         Object actual = pineTree.sendNodes(birchList);
-        System.out.println("actual = " + actual);
+//        System.out.println("actual = " + actual);
         assertEquals(" 7", actual);
     }
 
@@ -47,16 +48,14 @@ public class BinarySearchTreeTest {
         assertEquals(expected, actual);
     }
 
-    //
-    @Test public void containsTest() {
+    @Test
+    public void containsTest() {
         pineTree.add(14);
         pineTree.add(12);
         pineTree.add(17);
         pineTree.add(15);
         pineTree.add(13);
-
-        System.out.println(pineTree.root.nodeValue.toString());
-
+//        System.out.println(pineTree.root.nodeValue.toString());
         assertTrue(pineTree.contains(pineTree.root, 17));
         assertFalse(pineTree.contains(pineTree.root, 10));
     }
