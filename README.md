@@ -1,5 +1,9 @@
 # Code Challenge Table Of Contents - 401 Java
 
+## Hash
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-30-code-challenge---hashtables>CC30 - HashTable Implementation
+
 ## Sort
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-28-code-challenge---merge-sort>CC28 - QuickSort
