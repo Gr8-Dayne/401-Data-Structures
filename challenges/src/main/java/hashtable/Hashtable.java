@@ -1,9 +1,6 @@
 package hashtable;
 
 
-import java.util.ArrayList;
-
-
 public class Hashtable {
 
     int size;
@@ -15,7 +12,7 @@ public class Hashtable {
     }
 
     // Takes in an arbitrary key and returns an index in the collection.
-    private int hash(String key) {
+    public int hash(String key) {
         int hashValue = 0;
 
         for(int i = 0; i < key.length(); i++) {

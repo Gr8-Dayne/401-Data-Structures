@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class HashtableTest {
 
-    Hashtable stringVault = new Hashtable(11);
+    Hashtable stringVault = new Hashtable(4);
 
     @Test
     public void hashTest() {
@@ -15,10 +15,10 @@ public class HashtableTest {
         stringVault.add(2, "Sergei");
         stringVault.add(3, "Shane");
 
-        
+        int expected = 2;
         int actual = stringVault.hash("Sergei");
 
-        assertEquals();
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -37,6 +37,17 @@ public class HashtableTest {
 
     @Test
     public void containsTest() {
+        stringVault.add(1, "Mattäus");
+        stringVault.add(2, "Sergei");
+        stringVault.add(3, "Shane");
+        stringVault.add(4, "Daisy");
+        stringVault.add(5, "Dayne");
+        stringVault.add(6, "Annie");
+        stringVault.add(7, "Pete");
+        stringVault.add(8, "Micah");
+        stringVault.add(9, "Martin");
+        stringVault.add(10, "Phong");
+        stringVault.add(11, "Jerome");
 
     }
 
