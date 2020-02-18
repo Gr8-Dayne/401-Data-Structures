@@ -1,5 +1,6 @@
 package challenges;
 
+import init_challenges.ArrayShift;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

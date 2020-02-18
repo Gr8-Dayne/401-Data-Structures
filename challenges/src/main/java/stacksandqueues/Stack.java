@@ -4,18 +4,18 @@ public class Stack {
 
     Node top;
 
-    public void push(int numberVal) {
+    public void push(Integer numberVal) {
         top = new Node(numberVal, top);
     }
 
-    public int pop() {
-        int popVal = top.valueData;
+    public Integer pop() {
+        Integer popVal = (Integer) top.valueData;
         top = top.next;
         return popVal;
     }
 
-    public int peek() {
-        return top.valueData;
+    public String peek() {
+        return top.valueData.toString();
     }
 
     public boolean isEmpty() {

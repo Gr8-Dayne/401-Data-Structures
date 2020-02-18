@@ -1,34 +1,71 @@
 package stacksandqueues;
 
-public class Queue {
 
-    Node front;
-    Node back;
+import java.util.NoSuchElementException;
 
-    public void enqueue(int numberVal) {
-        if (front == null){
-            front = new Node(numberVal, null);
-            back = front;
+
+public class Queue<E> {
+
+    Node <E> front;
+    Node <E> back;
+
+    // Got this Method from Phong
+    public Queue() {
+        this.front = null;
+        this.back = null;
+    }
+
+    public void enqueue(E val) {
+
+        Node <E> node = new Node(val, null);
+        Node <E> currentNode = this.back;
+
+        if(this.front == null){
+            this.front = node;
+            this.back = node;
         } else {
-            back.next = new Node(numberVal, null);
-            back = back.next;
+            currentNode.next = node;
+            this.back = node;
         }
+
+        // OG code
+//        if (front == null){
+//            front = new Node<E>(numberVal, null);
+//            back = front;
+//        } else {
+//            back.next = new Node<E>(numberVal, null);
+//            back = back.next;
+//        }
     }
 
-    public int dequeue() {
-        int dequeueVal = 0;
-        if(front != null){
-            dequeueVal = front.valueData;
-            front = front.next;
+    public E dequeue() {
+
+        if(this.isEmpty()){
+            System.out.println("The Queue is empty");
+            throw new NoSuchElementException();
         }
-        return dequeueVal;
+        E loneValue = this.front.valueData;
+        this.front = this.front.next;
+        if(this.front == null){
+            this.back = null;
+        }
+        return loneValue;
+
+        // OG code
+//        E dequeueVal = this.front.valueData;
+//        this.front = this.front.next;
+//        if(this.front == null){
+//            this.back = null;
+//        }
+//        return dequeueVal;
     }
 
-    public int peek() {
-        if(front == null){
-            return Integer.parseInt(null);
+    public String peek(){
+        if(this.isEmpty()){
+            return null;
         }
-        return front.valueData;
+        E frontVal = this.front.valueData;
+        return frontVal.toString();
     }
 
     public boolean isEmpty() {

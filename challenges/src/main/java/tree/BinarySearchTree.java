@@ -3,13 +3,16 @@ package tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.io.*;
+import java.util.*;
+import tree.Node;
 
 
 public class BinarySearchTree {
 
     public Node root;
 
-    public LinkedList<Integer> inOrder(Node<Integer> t){
+    public LinkedList<Integer> inOrder(Node<Integer> t) {
 
         LinkedList<Integer> answer = new LinkedList<Integer>();
         if (t != null) {
@@ -52,7 +55,7 @@ public class BinarySearchTree {
     // Credit: https://stackoverflow.com/questions/10168066/how-to-print-out-all-the-elements-of-a-list-in-java
     public Object sendNodes(LinkedList<Integer> list) {
         String treeString = "";
-        for (int i=0; i<list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             // Why does this have to be += and not +?
             treeString += " " + list.get(i);
         }
@@ -61,48 +64,16 @@ public class BinarySearchTree {
 
     // Credit: https://people.cs.umass.edu/~barring/cs187f12/disc/BinarySearchTree.java
     public boolean contains(Node<Integer> root, Integer target) {
-            if (root == null) {
-                return false;
-            }
-            if (root.nodeValue == target) {
-                return true;
-            }
-            if (root.nodeValue > target) {
-                return contains(root.left, target);
-            }
-        return contains(root.right, target);
-    }
-
-    //
-    // Code Challenge 17
-    //
-
-    // Credit: Daisy helped me generate this method
-    public static ArrayList<Integer> breadthFirst(Node<Integer> currentNode) {
-
-        ArrayList<Integer> breadthList = new ArrayList<>();
-
-        if (currentNode == null) {
-            throw new IllegalArgumentException("Empty ArrayList Detected - Operation Aborted");
-        } else {
-
-            breadthList.add(currentNode.nodeValue);
-
-            if (currentNode.left != null) {
-                breadthList.add(currentNode.left.nodeValue);
-            } if (currentNode.right != null) {
-                breadthList.add(currentNode.right.nodeValue);
-            }
+        if (root == null) {
+            return false;
         }
-        return breadthList;
-    }
-
-    //
-    // Code Challenge 18
-    //
-
-    public static void findMaximumValue() {
-
+        if (root.nodeValue == target) {
+            return true;
+        }
+        if (root.nodeValue > target) {
+            return contains(root.left, target);
+        }
+        return contains(root.right, target);
     }
 }
 

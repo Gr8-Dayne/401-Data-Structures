@@ -3,6 +3,7 @@
  */
 package challenges;
 
+import init_challenges.Library;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

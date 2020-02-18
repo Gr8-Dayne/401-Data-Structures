@@ -21,7 +21,7 @@ public class PseudoQueueTest {
         forEnqueue.enqueue(3);
         forEnqueue.enqueue(7);
         // System.out.println(forEnqueue.forEnqueue.peek());
-        assertEquals(7, forEnqueue.forEnqueue.peek());
+        assertEquals("7", forEnqueue.forEnqueue.peek());
     }
 
     // Dequeue Test

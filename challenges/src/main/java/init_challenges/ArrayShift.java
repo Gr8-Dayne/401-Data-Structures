@@ -1,4 +1,4 @@
-package challenges;
+package init_challenges;
 
 import java.lang.*;
 
