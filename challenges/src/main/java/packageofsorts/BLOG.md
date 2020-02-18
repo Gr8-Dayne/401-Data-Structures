@@ -1,7 +1,7 @@
 
 # Challenge 28 - Quick Sort
 
-[SEE MY CODE]()</br>
+[SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java)</br>
 
 ### Challenge Description
 QuickSort is an algorithm that prioritizes speed while sorting. (Go more in-depth here)
@@ -53,7 +53,7 @@ ALGORITHM Swap(arr, i, low)
 
 # Challenge 27 - Merge Sort
 
-[SEE MY CODE]()</br>
+[SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java)</br>
 
 ### Challenge Description
 MergeSort is a combining algorithm that recursively calls upon itself to divide it's given array in half until there is only one object in each of the newly-divided arrays. The method then re-traces it's steps to sort the values of the arrays as they come back together until they are one array again, although this time, the array is in order.
@@ -108,7 +108,7 @@ ALGORITHM Merge(left, right, arr)
 
 # Challenge 26 - Insertion Sort
 
-[SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/insertionsort/InsertionSort.java)</br>
+[SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java)</br>
 
 ### Challenge Description
 InsertionSort is a sorting algorithm that traverses an array it receives. During the transversing, [i] and [j] are comparing and switching as required therefore sorting is occurring.</br>
