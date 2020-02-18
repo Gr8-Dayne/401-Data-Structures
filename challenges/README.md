@@ -1,7 +1,3 @@
-# DSAA
-
-
-
 ## Class 28 Code Challenge - Merge Sort
 
 #### Summary
