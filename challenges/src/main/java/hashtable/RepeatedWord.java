@@ -1,4 +1,4 @@
-package repeatedword;
+package hashtable;
 
 public class RepeatedWord {
 
@@ -7,7 +7,7 @@ public class RepeatedWord {
         // Iterate through input
 
         // Save each word as it's own String (separate/split by spaces: " ")
-        // Save into [something?]
+        // Save into [HashMap?]
 
         // If wordToBeSaved == alreadySavedWord from alreadySavedWords
         // Return this.wordToBeSaved

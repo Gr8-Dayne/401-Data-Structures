@@ -1,4 +1,4 @@
-package repeatedword;
+package hashtable;
 
 
 import org.junit.Test;
