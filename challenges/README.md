@@ -1,3 +1,32 @@
+## Class 32 Code Challenge - First Repeated Word
+
+#### Summary
+<!-- Short summary or background information -->
+
+#### Challenge
+Implement a Hashtable with the following methods:
+
+* Write a function that accepts a lengthy string parameter.
+
+* Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+#### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+#### API
+<!-- Description of each method publicly available in each of your hashtable -->
+
+
+#### Solution
+
+<a href=>White Board<a/>
+
+<a href=>Code<a/>
+
+<a href=>Tests<a/>
+
+
+
 ## Class 30 Code Challenge - Hashtables
 
 #### Summary
@@ -23,7 +52,7 @@ Implement a Hashtable with the following methods:
 
 #### Solution
 
-<a href=>BLOG.md<a/>
+<a href=>White Board<a/>
 
 <a href=>Code<a/>
 
