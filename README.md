@@ -2,6 +2,8 @@
 
 ## Hash
 
+<a href=>CC32 - First Repeated Word
+
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-30-code-challenge---hashtables>CC30 - HashTable Implementation
 
 ## Sort
