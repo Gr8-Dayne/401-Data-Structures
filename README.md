@@ -18,8 +18,6 @@
 
 ## Tree
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/pull/23>Pull-Request-23</a> (CC17 and 18)
-
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-18-code-challenge---maximum-value>CC18 - MaximumValue
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-17-code-challenge---breadth-first-traversal>CC17 - BreadthFirst
