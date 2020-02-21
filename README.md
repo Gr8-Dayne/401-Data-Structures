@@ -2,7 +2,7 @@
 
 ## Hash
 
-<a href=>CC33 - Tree Intersection
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-33-code-challenge---tree-intersection>CC33 - Tree Intersection
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-32-code-challenge---first-repeated-word>CC32 - First Repeated Word
 
