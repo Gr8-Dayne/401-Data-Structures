@@ -12,31 +12,31 @@ public class OfSorts {
     //
 
     // Credit: https://www.geeksforgeeks.org/insertion-sort/
-    public static int[] insertionSort(int[] arr) {
+    public static int[] insertionSort(int[] parentArray) {
 
-        if (arr.length == 0){
+        if (parentArray.length == 0){
             throw new IllegalArgumentException("Empty Array Detected - Operation Aborted");
         }
 
-        int arrIndexLength = arr.length;
+        int parentArrayIndexLength = parentArray.length;
 
-        for (int i = 1; i < arrIndexLength; ++i) {
+        for (int i = 1; i < parentArrayIndexLength; ++i) {
 
-            int temp = arr[i];
+            int temp = parentArray[i];
             int j = i - 1;
 
-            while (j >= 0 && arr[j] > temp) {
-                arr[j + 1] = arr[j];
+            while (j >= 0 && parentArray[j] > temp) {
+                parentArray[j + 1] = parentArray[j];
                 j = j - 1;
             }
-            arr[j + 1] = temp;
+            parentArray[j + 1] = temp;
         }
-        return arr;
+        return parentArray;
     }
 
     // Credit: https://www.geeksforgeeks.org/bubble-sort/
-    public static String printArray(int[] arr) {
-        return Arrays.toString(arr);
+    public static String printArray(int[] parentArray) {
+        return Arrays.toString(parentArray);
     }
 
     //
@@ -95,42 +95,41 @@ public class OfSorts {
     // Code Challenge 28
     //
 
+    // I had to catch myself back up to speed on this again...
     // Credit: https://howtodoinjava.com/algorithm/quicksort-java-example/
     // Credit: https://www.geeksforgeeks.org/quick-sort/
     // Credit: https://www.baeldung.com/java-quicksort
     // Credit: https://www.programcreek.com/2012/11/quicksort-array-in-java/
-    public void quickSort(int [] arr, int left, int right){
 
-        if(left < right){
-
-            int position = partition(arr, left, right);
-
-            quickSort(arr, left, position -1);
-            quickSort(arr, position + 1, right);
+    public static int[] quickSort(int[] parentArray, int l, int r){
+        if(l < r){
+            int position = partition(parentArray, l, r);
+            quickSort(parentArray, l, position -1);
+            quickSort(parentArray, position + 1, r);
         }
+        return parentArray;
     }
 
-    public int partition(int [] arr, int left, int right){
+    public static int partition(int[] parentArray, int l, int r){
 
-        int pivot = arr[right];
-        int low = left -1;
+        int pivot = parentArray[r];
+        int low = l -1;
 
-        for(int i = left; i <right; i++){
-            if(arr[i] <= pivot) {
+        for(int i = l; i <r; i++){
+            if(parentArray[i] <= pivot) {
                 low++;
-                swap(arr, i, low);
+                swap(parentArray, i, low);
             }
         }
-        swap(arr, right, low +1);
+        swap(parentArray, r, low +1);
         return low + 1;
     }
 
-    public void swap(int [] arr, int i, int low){
-
+    public static void swap(int[] parentArray, int i, int low){
         int temp;
-        temp = arr[i];
-        arr[i]= arr[low];
-        arr[low]= temp;
+        temp = parentArray[i];
+        parentArray[i]= parentArray[low];
+        parentArray[low]= temp;
     }
 }
 

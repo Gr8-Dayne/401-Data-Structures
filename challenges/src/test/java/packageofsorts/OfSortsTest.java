@@ -2,6 +2,7 @@ package packageofsorts;
 
 
 import org.junit.Test;
+import java.util.Arrays;
 import static org.junit.Assert.*;
 import static packageofsorts.OfSorts.*;
 
@@ -108,6 +109,7 @@ public class OfSortsTest {
 
     // Empty Array
     // Displays what it's supposed to
+
 //    @Test
 //    public void mergeSortEmptyTest() {
 //        inputArr = new int[]{};
@@ -120,15 +122,42 @@ public class OfSortsTest {
     //
 
     @Test
-    public void quickSortTest() {
+    public void quickSortMainTest() {
+        int[] input = {8, 4, 23, 42, 16, 15};
+        int[] actual = quickSort(input, 0, input.length-1);
+        int[] expected = {4, 8, 15, 16, 23, 42};
+        assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 
     @Test
-    public void partitionTest() {
+    public void quickReverseTest() {
+        int[] input = {20, 18, 12, 8, 5, -2};
+        int[] expected = {-2, 5, 8, 12, 18, 20};
+        int[] actual = quickSort(input, 0, input.length-1);
+        assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 
     @Test
-    public void swapTest() {
+    public void quickUniquesTest() {
+        int[] input = {5, 12, 7, 5, 5, 7};
+        int[] expected = {5, 5, 5, 7, 7, 12};
+        int[] actual = quickSort(input, 0, input.length-1);
+        assertEquals(Arrays.toString(expected), Arrays.toString(actual));
+    }
+
+    @Test
+    public void quickNearlySortedTest() {
+        int[] input = {2, 3, 5, 7, 13, 11};
+        int[] expected = {2, 3, 5, 7, 11, 13};
+        int[] actual = quickSort(input, 0, input.length-1);
+        assertEquals(Arrays.toString(expected), Arrays.toString(actual));
+    }
+
+    @Test
+    public void emptyArrayTest() {
+        int[] input = {};
+        int[] actual = quickSort(input, 0, input.length-1);
+        assertEquals(input, actual);
     }
 }
 
