@@ -4,15 +4,13 @@
 [SEE MY CODE](https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/packageofsorts/OfSorts.java)</br>
 
 ### Challenge Description
-QuickSort is an algorithm that prioritizes speed while sorting. (Go more in-depth here)
+QuickSort is an algorithm that prioritizes speed while sorting. Over all, three methods are used to do so with QuickSort being the method that initiates and finishes everything. The other two methods just help it achieve it's goal, partition for instance takes an element as a pivot, places the pivot element at its correct position in the sorted array, and places all smaller to the left and all greater elements to the right. The method swap however simply re-organizes how two elements are ordered. Overall, this method is great if you gotta sort things quickly. 
 </br>
 
 ### Approach & Efficiency
-Time: O(?)</br>
-(Go more in-depth here)</br></br>
+Time: O(n)</br>
 
-Space: O(?)</br>
-(Go more in-depth here)</br></br>
+Space: O(log(n))</br>
 
 ### Pseudo Code
 
