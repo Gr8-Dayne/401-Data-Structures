@@ -1,7 +1,7 @@
 ## Class 32 Code Challenge - First Repeated Word
 
 #### Summary
-<!-- Short summary or background information -->
+The biggest difficulties I ran into for this challenge's duration were that I would fix something with the previos CC and something else would break on this CC.
 
 #### Challenge
 Implement a Hashtable with the following methods:
@@ -11,26 +11,24 @@ Implement a Hashtable with the following methods:
 * Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
 #### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-#### API
-<!-- Description of each method publicly available in each of your hashtable -->
-
+A LOT of ajusting the previous CC.
 
 #### Solution
 
-<a href=>White Board<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC32WB.jpg>White Board<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/hashtable/RepeatedWord.java>Code<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/hashtable/RepeatedWordTest.java>Tests<a/>
+
+
 
 
 
 ## Class 30 Code Challenge - Hashtables
 
 #### Summary
-<!-- Short summary or background information -->
+I went through about 4 different variations of how to go about this, I learned a lot.
 
 #### Challenge
 Implement a Hashtable with the following methods:
@@ -44,19 +42,13 @@ Implement a Hashtable with the following methods:
 * hash: takes in an arbitrary key and returns an index in the collection.
 
 #### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-#### API
-<!-- Description of each method publicly available in each of your hashtable -->
-
+Initially, I thought I would try to do it a way nobody in the class seemed to be doing but it proved very complex so I erred on the side of caution. Much research was conducted and assistance here and there from my TA and peers.
 
 #### Solution
 
-<a href=>White Board<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/hashtable/HashMap.java>Code<a/>
 
-<a href=>Code<a/>
-
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/hashtable/HashMapTest.java>Tests<a/>
 
 
 
