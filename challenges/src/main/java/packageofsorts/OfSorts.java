@@ -102,12 +102,21 @@ public class OfSorts {
     // Credit: https://www.programcreek.com/2012/11/quicksort-array-in-java/
 
     public static int[] quickSort(int[] parentArray, int l, int r){
+
         if(l < r){
             int position = partition(parentArray, l, r);
             quickSort(parentArray, l, position -1);
             quickSort(parentArray, position + 1, r);
         }
         return parentArray;
+    }
+
+    public static void swap(int[] parentArray, int i, int low){
+
+        int temp;
+        temp = parentArray[i];
+        parentArray[i]= parentArray[low];
+        parentArray[low]= temp;
     }
 
     public static int partition(int[] parentArray, int l, int r){
@@ -123,13 +132,6 @@ public class OfSorts {
         }
         swap(parentArray, r, low +1);
         return low + 1;
-    }
-
-    public static void swap(int[] parentArray, int i, int low){
-        int temp;
-        temp = parentArray[i];
-        parentArray[i]= parentArray[low];
-        parentArray[low]= temp;
     }
 }
 
