@@ -95,11 +95,16 @@ public class OfSorts {
     // Code Challenge 28
     //
 
-    // Credit: I have a source for the below code but I forgot the website, I will find it for submission of "Code Challenge 28 - Quick Sort"
+    // Credit: https://howtodoinjava.com/algorithm/quicksort-java-example/
+    // Credit: https://www.geeksforgeeks.org/quick-sort/
+    // Credit: https://www.baeldung.com/java-quicksort
+    // Credit: https://www.programcreek.com/2012/11/quicksort-array-in-java/
     public void quickSort(int [] arr, int left, int right){
 
         if(left < right){
+
             int position = partition(arr, left, right);
+
             quickSort(arr, left, position -1);
             quickSort(arr, position + 1, right);
         }
