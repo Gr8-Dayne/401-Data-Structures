@@ -1,3 +1,28 @@
+## Class 33 Code Challenge - Tree Intersection
+
+#### Summary
+
+
+#### Challenge
+* Write a function called tree_intersection that takes two binary tree parameters.
+
+* Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
+
+#### Approach & Efficiency
+
+
+#### Solution
+
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC33WB.png>White Board<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/hashtable/TreeIntersection.java>Code<a/>
+
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/hashtable/TreeIntersectionTest.java>Tests<a/>
+
+
+
+
+
 ## Class 32 Code Challenge - First Repeated Word
 
 #### Summary
