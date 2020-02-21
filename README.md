@@ -24,6 +24,6 @@
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-16-code-challenge---fizzbuzz>CC16 - FizzBuzz
 
-<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-15-code-challenge---binary-tree-and-bst-implementation>Older Challenges
+### <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-15-code-challenge---binary-tree-and-bst-implementation>Older Challenges
 
 
