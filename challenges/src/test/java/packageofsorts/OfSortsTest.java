@@ -115,6 +115,22 @@ public class OfSortsTest {
 //        String actual = printArray(mergeSort(inputArr));
 //        assertEquals(" ", actual);
 //    }
+
+    //
+    // Code Challenge 27
+    //
+
+    @Test
+    public void quickSortTest() {
+    }
+
+    @Test
+    public void partitionTest() {
+    }
+
+    @Test
+    public void swapTest() {
+    }
 }
 
 
