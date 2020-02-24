@@ -1,11 +1,7 @@
 package tree;
 
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.io.*;
-import java.util.*;
-import tree.Node;
 
 
 public class BinarySearchTree {
