@@ -1,7 +1,7 @@
 ## Class 33 Code Challenge - Tree Intersection
 
 #### Summary
-
+This one took me a long time, but I'm glad I just sat down and did it finally.
 
 #### Challenge
 * Write a function called tree_intersection that takes two binary tree parameters.
@@ -9,7 +9,7 @@
 * Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
 
 #### Approach & Efficiency
-
+I started this challenge with a good plan in my head but I ended up second-guessing myself and trying to do it another way than my initial plan. I ended up going back to my initial plan an finding my solution a couple places online.
 
 #### Solution
 
