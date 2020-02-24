@@ -11,7 +11,7 @@ public class Tree<E> {
 
     public Node<E> root;
 
-    // Any exceptions or errors that come from your code should be semantic, capturable errors.
+    // Any exceptions or errors that come from your code should be semantic, capture-able errors.
     // For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 
     // returns an List of the values, ordered appropriately.
@@ -122,6 +122,7 @@ public class Tree<E> {
         }
         return findMaximumValue(this.root);
     }
+
     // Credit: Daisy helped me with this Method
     private Integer findMaximumValue(Node<E> rootNode){
         Integer potentialTopGun = (Integer) rootNode.nodeValue;
