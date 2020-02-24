@@ -27,6 +27,8 @@
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-17-code-challenge---breadth-first-traversal>CC17 - BreadthFirst
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-16-code-challenge---fizzbuzz>CC16 - FizzBuzz
+  
+<br>
 
 ### <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-15-code-challenge---binary-tree-and-bst-implementation>Older Challenges
 
