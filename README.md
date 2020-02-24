@@ -1,6 +1,6 @@
 # Code Challenge Table Of Contents - 401 Java
 
-## Hash
+## Graph
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-35-code-challenge---graph-implementation>CC35 - Graph Implementation
 
