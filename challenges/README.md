@@ -1,3 +1,26 @@
+## Class 37 Code Challenge - Get Edge
+
+#### Summary
+
+
+#### Challenge
+Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+
+#### Approach & Efficiency
+
+
+#### Solution
+
+<a href=>White Board<a/>
+
+<a href=>Code<a/>
+
+<a href=>Tests<a/>
+
+
+
+
+
 ## Class 36 Code Challenge - Breadth First
 
 #### Summary
@@ -10,6 +33,8 @@ Extend your graph object with a breadth-first traversal method that accepts a st
 
 
 #### Solution
+
+<a href=>White Board<a/>
 
 <a href=>Code<a/>
 
