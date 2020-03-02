@@ -11,11 +11,11 @@ Create a function that accepts an adjacency list as a graph, and conducts a dept
 
 #### Solution
 
-<a href=>White Board<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC38WB.jpg>White Board<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/graph/DepthFirst.java>Code<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/graph/DepthFirstTest.java>Tests<a/>
 
 
 
@@ -34,11 +34,11 @@ Write a function based on the specifications above, which takes in a graph, and 
 
 #### Solution
 
-<a href=>White Board<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC37WB.jpg>White Board<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/graph/GetEdge.java>Code<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/graph/GetEdgeTest.java>Tests<a/>
 
 
 
@@ -57,11 +57,11 @@ Extend your graph object with a breadth-first traversal method that accepts a st
 
 #### Solution
 
-<a href=>White Board<a/>
+<a href=https://raw.githubusercontent.com/Gr8-Dayne/401-Data-Structures/master/challenges/assets/CC36WB.jpg>White Board<a/>
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/main/java/graph/BreadthFirst.java>Code<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/graph/BreadthFirstTest.java>Tests<a/>
 
 
 
@@ -102,9 +102,9 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 
 #### Solution
 
-<a href=>Code<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/tree/master/challenges/src/main/java/graph>Code<a/>
 
-<a href=>Tests<a/>
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/src/test/java/graph/GraphTest.java>Tests<a/>
 
 
 
