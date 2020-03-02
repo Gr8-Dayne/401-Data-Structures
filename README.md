@@ -2,7 +2,7 @@
 
 ## Graph
 
-<a href=>CC38 - Depth First
+<a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-38-code-challenge---depth-first>CC38 - Depth First
 
 <a href=https://github.com/Gr8-Dayne/401-Data-Structures/blob/master/challenges/README.md#class-37-code-challenge---get-edge>CC37 - Get Edge
 
