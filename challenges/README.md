@@ -1,3 +1,26 @@
+## Class 38 Code Challenge - Depth First
+
+#### Summary
+
+
+#### Challenge
+Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
+
+#### Approach & Efficiency
+
+
+#### Solution
+
+<a href=>White Board<a/>
+
+<a href=>Code<a/>
+
+<a href=>Tests<a/>
+
+
+
+
+
 ## Class 37 Code Challenge - Get Edge
 
 #### Summary
