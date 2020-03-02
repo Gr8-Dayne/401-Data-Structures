@@ -24,7 +24,7 @@ Create a function that accepts an adjacency list as a graph, and conducts a dept
 ## Class 37 Code Challenge - Get Edge
 
 #### Summary
-
+This one I found to be a bit easier than the last and more fun.
 
 #### Challenge
 Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
@@ -47,7 +47,7 @@ Write a function based on the specifications above, which takes in a graph, and 
 ## Class 36 Code Challenge - Breadth First
 
 #### Summary
-
+Doing this challenge reminded me an awful lot of Trees.
 
 #### Challenge
 Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
@@ -70,7 +70,7 @@ Extend your graph object with a breadth-first traversal method that accepts a st
 ## Class 35 Code Challenge - Graph Implementation
 
 #### Summary
-
+This took a lot of research for me to get back into the "Graph mindset".
 
 #### Challenge
 Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
